@@ -1,52 +1,50 @@
 {
-  "animateLoading": true,
+  "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "text"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontFamily": "Inter",
+  "fontSize": "1.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "nqb63892t5",
-  "leftColumn": 0,
+  "key": "veu9znmysv",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 8,
+  "mobileRightColumn": 4,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
-  "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 14.078125,
-  "parentId": "0",
+  "parentColumnSpace": 19.1875,
+  "parentId": "q4xcz8sc9t",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 29,
   "shouldTruncate": false,
-  "text": "Non Production",
+  "text": "{{appsmith.store.EditCatalog===undefined?\"New\":\"Edit\"}} Product Catalog",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "#1d4ed7",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "lgg0x0m0ng",
-  "widgetName": "Text1"
+  "widgetId": "qsvgkubu7c",
+  "widgetName": "EDIT_Product_Catalog"
 }

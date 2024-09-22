@@ -1,0 +1,4 @@
+EXECUTE [dbo].[SELECT_FOR_PRODUCT_CATALOG] 
+   @PRODUCT_ID = {{appsmith.store.EditCatalog===undefined?"":appsmith.store.EditCatalog.PRODUCT_ID}}
+
+

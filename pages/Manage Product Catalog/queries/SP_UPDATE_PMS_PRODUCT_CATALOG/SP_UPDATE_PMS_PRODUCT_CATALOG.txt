@@ -1,0 +1,13 @@
+EXECUTE [dbo].[UPDATE_PMS_PRODUCT_CATALOG_LM] 
+   @pProductID = {{PRODUCT_ID.text}}
+  ,@pType = {{PRODUCT_TYPE.selectedOptionValue}}
+  ,@pNameEN = {{PRODUCT_NAME_EN.text}}
+  ,@pNameTH = {{PRODUCT_NAME_TH.text}}
+  ,@pUnit = {{UNIT.selectedOptionValue}}
+  ,@pAvaliableUnit = {{AVAILABLE_UNIT.text}}
+  ,@pTotalUnit = {{TOTAL_UNIT.text}}
+  ,@pFloor = {{FLOOR_NO.selectedOptionValue}}
+  ,@pStatus = {{STATUS.selectedOptionValue}}
+  ,@pProductCatalogDetail = {{PRODUCT_DETAIL.text}}
+  ,@UserID = 'Unknown'
+  ,@Active = {{SP_SELECTPRODUCTCATALOG.data.length == 0?0:SP_SELECTPRODUCTCATALOG.data[0].ACTIVE}}
