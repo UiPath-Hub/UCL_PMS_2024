@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66de956ac05adf72589749ca_040bb9f9-b544-4b57-8d4a-57efc6585865",
-  "id": "Product Catalog Dashboard_SP_SELECT_PRODUCT_MASTER",
+  "gitSyncId": "66de956ac05adf72589749ca_6f062749-3958-481b-a90f-999f9d59a418",
+  "id": "Product Inventory Dashboard_SP_SELECT_FOR_DASHBOARD",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT TOP 10 * FROM dbo.METER_REC_DETAIL",
+      "body": "EXEC\t[dbo].[SELECT_FOR_DASHBOARD]\n\t\t  @pDashboardName = N'Product Catalog Dashboard'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,10 @@
       "name": "UCL_PMS_QAS",
       "pluginId": "mssql-plugin"
     },
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "SP_SELECT_PRODUCT_MASTER",
-    "pageId": "Product Catalog Dashboard",
+    "name": "SP_SELECT_FOR_DASHBOARD",
+    "pageId": "Product Inventory Dashboard",
     "userSetOnLoad": false
   }
 }

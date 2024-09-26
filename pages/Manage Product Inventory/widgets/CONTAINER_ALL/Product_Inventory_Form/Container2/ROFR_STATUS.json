@@ -1,0 +1,48 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "defaultCheckedState": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "to86hgcmqk",
+  "label": "ROFR ",
+  "labelPosition": "Right",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 90,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 86,
+  "needsErrorInfo": false,
+  "originalBottomRow": 80,
+  "originalTopRow": 76,
+  "parentColumnSpace": 19.8125,
+  "parentId": "ov6gui9kwy",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "topRow": 5,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "1kbw0405n6",
+  "widgetName": "ROFR_STATUS"
+}

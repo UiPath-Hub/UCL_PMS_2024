@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 9,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "search",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3rv4og275i",
+  "leftColumn": 23,
+  "minWidth": 50,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(Modal_Select_Catalog_Name.name);}}",
+  "parentColumnSpace": 19.1875,
+  "parentId": "vximag0f6z",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 27,
+  "topRow": 5,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "a5lx7kgylh",
+  "widgetName": "IconButton8"
+}

@@ -1,22 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 27,
   "boxShadow": "none",
-  "buttonColor": "#22c55e",
+  "buttonColor": "#3b82f6",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": true,
+  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -25,34 +17,35 @@
     }
   ],
   "iconAlign": "left",
+  "iconName": "search",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "st8tsne4v5",
-  "leftColumn": 57,
+  "leftColumn": 28,
   "minWidth": 120,
   "mobileBottomRow": 14,
   "mobileLeftColumn": 48,
   "mobileRightColumn": 64,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{JS.submitData().then(() => { removeValue(\"EditCatalog\").then(()=>{\n\t\tnavigateTo('Product Catalog Dashboard', {}, 'SAME_WINDOW');\n\t})\n});}}",
-  "originalBottomRow": 61,
-  "originalTopRow": 57,
+  "onClick": "{{SP_SER_SEARCH_FOR_PRODUCT_CATA.run()}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
   "parentColumnSpace": 19.5,
-  "parentId": "dhkjjujsed",
+  "parentId": "37mz4vrrp2",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
-  "text": "{{appsmith.store.EditCatalog===undefined?\"Submit\":\"Save\"}}",
-  "topRow": 0,
+  "rightColumn": 35,
+  "text": "Search",
+  "topRow": 23,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "wmig0rdp3z",
-  "widgetName": "BUTTON_SAVE"
+  "widgetId": "drmf3d8srk",
+  "widgetName": "BUTTON_SEARCH"
 }

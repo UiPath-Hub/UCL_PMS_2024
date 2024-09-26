@@ -1,0 +1,11 @@
+EXEC	[dbo].[INSERT_PMS_PRODUCT_CATALOG_LM]
+		@pType = {{PRODUCT_TYPE.selectedOptionValue.toString()}},
+		@pNameEN = {{PRODUCT_NAME_EN.text}},
+		@pNameTH = {{PRODUCT_NAME_TH.text}},
+		@pUnit = {{UNIT.selectedOptionValue.toString()}},
+		@pAvaliableUnit ={{AVAILABLE_UNIT.text}},
+		@pTotalUnit = {{TOTAL_UNIT.text}},
+		@pFloor ={{FLOOR_NO.selectedOptionValue.toString()}},
+		@pStatus = {{STATUS.selectedOptionValue.toString()}},
+		@pProductCatalogDetail = {{PRODUCT_DETAIL.text}},
+		@UserID = {{"Unknown"}}

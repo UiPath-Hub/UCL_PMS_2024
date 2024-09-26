@@ -48,6 +48,14 @@
     {
       "id": "Manage Product Catalog",
       "isDefault": false
+    },
+    {
+      "id": "Product Inventory Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Manage Product Inventory",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
