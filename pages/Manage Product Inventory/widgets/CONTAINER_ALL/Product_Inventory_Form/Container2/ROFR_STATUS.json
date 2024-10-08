@@ -4,17 +4,24 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 9,
-  "defaultCheckedState": true,
+  "defaultCheckedState": "{{DefaultInventory.ROFR_STATUS.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isLoading": false,
@@ -32,8 +39,8 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 86,
   "needsErrorInfo": false,
-  "originalBottomRow": 80,
-  "originalTopRow": 76,
+  "originalBottomRow": 9,
+  "originalTopRow": 5,
   "parentColumnSpace": 19.8125,
   "parentId": "ov6gui9kwy",
   "parentRowSpace": 10,

@@ -3,15 +3,18 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 48,
+  "bottomRow": 49,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{DefaultInventory.PRODUCT_DESCRIPTION.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -38,8 +41,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 48,
-  "originalTopRow": 40,
+  "originalBottomRow": 49,
+  "originalTopRow": 41,
   "parentColumnSpace": 19.5,
   "parentId": "vximag0f6z",
   "parentRowSpace": 10,
@@ -49,7 +52,7 @@
   "rightColumn": 63,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 40,
+  "topRow": 41,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "jvxoi8geb5",

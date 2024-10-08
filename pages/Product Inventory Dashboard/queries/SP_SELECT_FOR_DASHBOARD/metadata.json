@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "EXEC\t[dbo].[SELECT_FOR_DASHBOARD]\n\t\t  @pDashboardName = N'Product Catalog Dashboard'",
+      "body": "EXEC\t[dbo].[SELECT_FOR_DASHBOARD]\n\t\t  @pDashboardName = N'Product Inventory Dashboard'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "mssql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "SP_SELECT_FOR_DASHBOARD",
     "pageId": "Product Inventory Dashboard",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

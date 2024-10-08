@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "D MMMM, YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "2024-08-08T06:02:57.271Z",
+  "defaultDate": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,6 +17,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
   "isDisabled": false,

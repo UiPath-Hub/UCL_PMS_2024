@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 21,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.EditInventory===undefined?\"\":appsmith.store.EditInventory}}",
+  "defaultText": "{{DefaultInventory.INVENTORY_ID.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,22 +14,15 @@
       "key": "borderRadius"
     },
     {
-      "key": "isDisabled"
-    },
-    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isDisabled"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": "{{appsmith.store.EditInventory===undefined}}",
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
@@ -49,8 +42,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 23,
-  "originalTopRow": 19,
+  "originalBottomRow": 21,
+  "originalTopRow": 16,
   "parentColumnSpace": 19.5,
   "parentId": "vximag0f6z",
   "parentRowSpace": 10,
@@ -60,7 +53,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 27,
   "showStepArrows": false,
-  "topRow": 15,
+  "topRow": 16,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "8nl3ujal11",

@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 27,
+  "bottomRow": 26,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( DefaultInventory.CT.data.toString()))(CT.options, CT.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "isRequired"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,7 +32,7 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": "{{SP_SELECTPRODUCTCATALOG.data[0] === undefined || SP_SELECTPRODUCTCATALOG.data[0].PRODUCT_TYPE_EN.includes(\"Meter\")}}",
+  "isRequired": "{{appsmith.store[\"PageType\"] === PageTypes.Meter}}",
   "isVisible": true,
   "key": "72xnnx6qo8",
   "labelAlignment": "left",
@@ -48,8 +51,8 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 27,
-  "originalTopRow": 22,
+  "originalBottomRow": 26,
+  "originalTopRow": 21,
   "parentColumnSpace": 19.5,
   "parentId": "5mldbf86rj",
   "parentRowSpace": 10,
@@ -59,7 +62,7 @@
   "rightColumn": 27,
   "serverSideFiltering": false,
   "sourceData": "[\n{\n    \"name\": \"Direct\",\n    \"code\": \"Direct\"\n  },\n  {\n    \"name\": \"30/5\",\n    \"code\": \"30/5\"\n  },\n  {\n    \"name\": \"50/5\",\n    \"code\": \"50/5\"\n  },\n    {\n    \"name\": \"100/5\",\n    \"code\": \"100/5\"\n  },\n    {\n    \"name\": \"150/5\",\n    \"code\": \"150/5\"\n  },\n    {\n    \"name\": \"200/5\",\n    \"code\": \"200/5\"\n  },  {\n    \"name\": \"250/5\",\n    \"code\": \"250/5\"\n  },\n    {\n    \"name\": \"300/5\",\n    \"code\": \"300/5\"\n  },  {\n    \"name\": \"400/5\",\n    \"code\": \"400/5\"\n  }\n]",
-  "topRow": 22,
+  "topRow": 21,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "hh31glxqxl",

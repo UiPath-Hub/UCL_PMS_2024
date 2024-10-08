@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{DefaultInventory.ROFR_FRONT.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,10 +14,13 @@
       "key": "borderRadius"
     },
     {
+      "key": "isDisabled"
+    },
+    {
       "key": "isRequired"
     },
     {
-      "key": "isDisabled"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -34,7 +37,7 @@
   "inputType": "TEXT",
   "isDisabled": "{{!ROFR_STATUS.isChecked}}",
   "isLoading": false,
-  "isRequired": "{{ROFR_STATUS.isChecked? (ROFR_BACK.text==\"\"&&ROFR_LEFT.text==\"\"&&ROFR_RIGHT.text==\"\"):false}}",
+  "isRequired": "{{JS.isROFRRequired()}}",
   "isVisible": true,
   "key": "nwk391w658",
   "label": "Front",
@@ -52,8 +55,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 84,
-  "originalTopRow": 80,
+  "originalBottomRow": 15,
+  "originalTopRow": 10,
   "parentColumnSpace": 19.5,
   "parentId": "ov6gui9kwy",
   "parentRowSpace": 10,

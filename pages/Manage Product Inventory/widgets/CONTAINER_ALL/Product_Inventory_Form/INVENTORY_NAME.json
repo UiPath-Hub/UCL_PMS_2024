@@ -3,15 +3,21 @@
   "animateLoading": true,
   "autoFocus": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 26,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{DefaultInventory.INVENTORY_NAME.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,7 +29,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "nwk391w658",
-  "label": "Inventory Name (TH)",
+  "label": "Inventory Name",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
@@ -38,8 +44,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 48,
-  "originalTopRow": 44,
+  "originalBottomRow": 26,
+  "originalTopRow": 21,
   "parentColumnSpace": 19.5,
   "parentId": "vximag0f6z",
   "parentRowSpace": 10,
@@ -49,9 +55,10 @@
   "rightColumn": 27,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 20,
+  "topRow": 21,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{INVENTORY_NAME.text !== \"FREESPACE\"}}",
   "version": 2,
   "widgetId": "0b1lvlzcqj",
-  "widgetName": "INVENTORY_NAME_TH"
+  "widgetName": "INVENTORY_NAME"
 }

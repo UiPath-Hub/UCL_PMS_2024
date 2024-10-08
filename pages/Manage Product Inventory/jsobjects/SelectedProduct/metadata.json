@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66de956ac05adf72589749ca_5ecc0e2a-d399-412d-8dd3-9f66074903c6",
+  "id": "Manage Product Inventory_SelectedProduct",
+  "unpublishedCollection": {
+    "name": "SelectedProduct",
+    "pageId": "Manage Product Inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,14 +1,12 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowAddNewRow": false,
   "animateLoading": true,
   "borderColor": "#E0DEDE",
-  "borderRadius": "0px",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 32,
+  "bottomRow": 41,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
-  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -34,52 +32,29 @@
   },
   "columnOrder": [
     "PRODUCT_ID",
-    "PRODUCT_NAME",
-    "PRODUCT_TYPE",
-    "STATUS",
+    "TOTAL_UNIT",
     "AVAILABLE_UNIT",
-    "TOTAL_UNIT"
+    "STATUS",
+    "PRODUCT_TYPE",
+    "PRODUCT_NAME"
   ],
-  "columnUpdatedAt": 1727074321680,
-  "columnWidthMap": {
-    "BusinessType": 159,
-    "CompanyContact": 188,
-    "CompanyName": 294,
-    "Company_Number": 186,
-    "CustomerContact": 256,
-    "CustomerName": 357,
-    "CustomerNumber": 181,
-    "Customer_Number": 225,
-    "Email": 229,
-    "EndDate": 130,
-    "Floor": 91,
-    "InventoryName": 210,
-    "InventoryNumber": 191,
-    "PRODUCT_NAME": 200,
-    "ProductName": 322,
-    "RegistalationNumber": 209,
-    "Registalation_Number": 217,
-    "SerialNumber": 156,
-    "StartDate": 119,
-    "Status": 113,
-    "Telephone": 155,
-    "TotalUnit": 157,
-    "Type": 208
-  },
-  "compactMode": "DEFAULT",
+  "columnUpdatedAt": 1728378383479,
+  "columnWidthMap": {},
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
-  "defaultSelectedRowIndices": "[\n  0\n]",
+  "defaultSelectedRowIndices": [
+    0
+  ],
   "delimiter": ",",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
-      "key": "boxShadow"
+      "key": "borderRadius"
     },
     {
-      "key": "cellBackground"
+      "key": "boxShadow"
     },
     {
       "key": "tableData"
@@ -88,19 +63,19 @@
       "key": "primaryColumns.PRODUCT_ID.computedValue"
     },
     {
-      "key": "primaryColumns.PRODUCT_TYPE.computedValue"
-    },
-    {
-      "key": "primaryColumns.PRODUCT_NAME.computedValue"
-    },
-    {
-      "key": "primaryColumns.STATUS.computedValue"
+      "key": "primaryColumns.TOTAL_UNIT.computedValue"
     },
     {
       "key": "primaryColumns.AVAILABLE_UNIT.computedValue"
     },
     {
-      "key": "primaryColumns.TOTAL_UNIT.computedValue"
+      "key": "primaryColumns.STATUS.computedValue"
+    },
+    {
+      "key": "primaryColumns.PRODUCT_TYPE.computedValue"
+    },
+    {
+      "key": "primaryColumns.PRODUCT_NAME.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -116,32 +91,27 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": false,
+  "isVisibleDownload": true,
   "isVisibleFilters": false,
-  "isVisiblePagination": false,
-  "isVisibleSearch": false,
-  "key": "kj14wu3iot",
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "ob4ydro1fz",
   "label": "Data",
   "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 107,
+  "mobileBottomRow": 41,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 79,
-  "multiRowSelection": false,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "originalBottomRow": 40,
-  "originalTopRow": 19,
-  "parentColumnSpace": 20.09375,
+  "parentColumnSpace": 10.03125,
   "parentId": "dffii2j2mz",
   "parentRowSpace": 10,
-  "primaryColumnId": "PRODUCT_ID",
   "primaryColumns": {
     "AVAILABLE_UNIT": {
       "alias": "AVAILABLE_UNIT",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
       "columnType": "number",
       "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"AVAILABLE_UNIT\"]))}}",
       "currencyCode": "USD",
@@ -150,7 +120,7 @@
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "AVAILABLE_UNIT",
-      "index": 4,
+      "index": 9,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -163,7 +133,7 @@
       "notation": "standard",
       "originalId": "AVAILABLE_UNIT",
       "sticky": "",
-      "textSize": "1rem",
+      "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -173,7 +143,6 @@
       "alias": "PRODUCT_ID",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
       "columnType": "text",
       "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PRODUCT_ID\"]))}}",
       "currencyCode": "USD",
@@ -195,7 +164,7 @@
       "notation": "standard",
       "originalId": "PRODUCT_ID",
       "sticky": "",
-      "textSize": "1rem",
+      "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -205,7 +174,6 @@
       "alias": "PRODUCT_NAME",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
       "columnType": "text",
       "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PRODUCT_NAME\"]))}}",
       "currencyCode": "USD",
@@ -214,7 +182,7 @@
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "PRODUCT_NAME",
-      "index": 2,
+      "index": 5,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -223,11 +191,11 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "PRODUCT_NAME",
+      "label": "Product Name",
       "notation": "standard",
       "originalId": "PRODUCT_NAME",
       "sticky": "",
-      "textSize": "1rem",
+      "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -237,7 +205,6 @@
       "alias": "PRODUCT_TYPE",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
       "columnType": "text",
       "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"PRODUCT_TYPE\"]))}}",
       "currencyCode": "USD",
@@ -246,7 +213,7 @@
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "PRODUCT_TYPE",
-      "index": 1,
+      "index": 4,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -259,7 +226,7 @@
       "notation": "standard",
       "originalId": "PRODUCT_TYPE",
       "sticky": "",
-      "textSize": "1rem",
+      "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -269,7 +236,6 @@
       "alias": "STATUS",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
       "columnType": "text",
       "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"STATUS\"]))}}",
       "currencyCode": "USD",
@@ -278,7 +244,7 @@
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "STATUS",
-      "index": 3,
+      "index": 10,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -291,7 +257,7 @@
       "notation": "standard",
       "originalId": "STATUS",
       "sticky": "",
-      "textSize": "1rem",
+      "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -301,7 +267,6 @@
       "alias": "TOTAL_UNIT",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
       "columnType": "number",
       "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOTAL_UNIT\"]))}}",
       "currencyCode": "USD",
@@ -310,7 +275,7 @@
       "enableSort": true,
       "horizontalAlignment": "LEFT",
       "id": "TOTAL_UNIT",
-      "index": 5,
+      "index": 8,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -323,7 +288,7 @@
       "notation": "standard",
       "originalId": "TOTAL_UNIT",
       "sticky": "",
-      "textSize": "1rem",
+      "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -334,15 +299,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
   "tableData": "{{SP_SER_SEARCH_FOR_PR_CATALOG.data}}",
-  "textSize": "1rem",
-  "topRow": 12,
+  "textSize": "0.875rem",
+  "topRow": 13,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
-  "variant": "DEFAULT",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "aytifv4det",
+  "widgetId": "c9lkxaizvm",
   "widgetName": "Table_Catalog_Results"
 }

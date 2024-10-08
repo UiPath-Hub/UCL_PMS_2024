@@ -1,0 +1,5 @@
+EXECUTE [dbo].[UPDATE_DELETE_FLAG_FOR_PMS_PRODUCT_CATALOG_LM] 
+   @pProductID = {{PRODUCT_ID.text}}
+  ,@pUserID = 'unknown'
+
+

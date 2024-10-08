@@ -2,15 +2,18 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 36,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( DefaultInventory.ZONE.data.toString()))(ZONE.options, ZONE.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -42,8 +45,8 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 26,
-  "originalTopRow": 22,
+  "originalBottomRow": 36,
+  "originalTopRow": 31,
   "parentColumnSpace": 19.5,
   "parentId": "vximag0f6z",
   "parentRowSpace": 10,
@@ -53,7 +56,7 @@
   "rightColumn": 27,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"A\",\n    \"code\": \"A\"\n  },\n  {\n    \"name\": \"B\",\n    \"code\": \"B\"\n  },\n  {\n    \"name\": \"C\",\n    \"code\": \"C\"\n  },\n  {\n    \"name\": \"D\",\n    \"code\": \"D\"\n  }\n]",
-  "topRow": 30,
+  "topRow": 31,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "eeadg2cvs0",

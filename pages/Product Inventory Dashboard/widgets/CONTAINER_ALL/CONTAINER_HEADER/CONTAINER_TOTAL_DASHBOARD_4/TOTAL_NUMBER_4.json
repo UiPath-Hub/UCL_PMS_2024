@@ -8,6 +8,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,7 +38,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 11,
   "shouldTruncate": false,
-  "text": "20",
+  "text": "{{SP_SELECT_FOR_DASHBOARD.data[0].TOTAL_NUMBER_4}}",
   "textAlign": "LEFT",
   "textColor": "#ffffff",
   "topRow": 4,

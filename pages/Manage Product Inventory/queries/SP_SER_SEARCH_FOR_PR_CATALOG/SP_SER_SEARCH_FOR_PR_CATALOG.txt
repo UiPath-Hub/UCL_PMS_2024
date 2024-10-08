@@ -4,5 +4,5 @@ EXEC [dbo].[SER_SEARCH_FOR_PRODUCT_CATALOG]
 		@pProducType = null,
 		@pProductCatalogStatus = null,
 		@pAvailableUnit = null,
-		@pTotalUnit = null
+		@pTotalUnit = null,
 		@pTOP = 10

@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 16,
   "boxShadow": "none",
-  "defaultText": "{{`${SP_SELECTPRODUCTCATALOG.data[0].PRODUCT_TYPE_TH}/${SP_SELECTPRODUCTCATALOG.data[0].PRODUCT_TYPE_EN}`}}",
+  "defaultText": "{{SelectedProduct.PRODUCT_TYPE()}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,8 +41,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 48,
-  "originalTopRow": 44,
+  "originalBottomRow": 16,
+  "originalTopRow": 11,
   "parentColumnSpace": 19.5,
   "parentId": "vximag0f6z",
   "parentRowSpace": 10,
@@ -52,7 +52,7 @@
   "rightColumn": 27,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 10,
+  "topRow": 11,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "tpd7s9vwur",

@@ -2,20 +2,29 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 36,
   "boxShadow": "none",
   "closeOnSelection": true,
   "dateFormat": "D MMMM, YYYY",
   "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{DefaultInventory.START_DATE.data===\"\"?\"\": moment(DefaultInventory.START_DATE.data).format()}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
   "isDisabled": false,
@@ -40,8 +49,8 @@
   "mobileRightColumn": 55,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "originalBottomRow": 37,
-  "originalTopRow": 33,
+  "originalBottomRow": 36,
+  "originalTopRow": 31,
   "parentColumnSpace": 16.7841796875,
   "parentId": "vximag0f6z",
   "parentRowSpace": 10,
@@ -50,7 +59,7 @@
   "rightColumn": 50,
   "shortcuts": false,
   "timePrecision": "None",
-  "topRow": 30,
+  "topRow": 31,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "dt1bupks09",

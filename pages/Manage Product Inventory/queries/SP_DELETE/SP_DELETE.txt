@@ -1,0 +1,3 @@
+EXECUTE [dbo].[UPDATE_DELETE_FLAG_FOR_PMS_PRODUCT_INVENTORY_LM] 
+   @pInventoryID = {{INVENTORY_ID.text}}
+  ,@pUserID = 'unknown'

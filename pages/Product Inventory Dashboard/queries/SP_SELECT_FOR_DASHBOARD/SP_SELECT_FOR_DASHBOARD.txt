@@ -1,2 +1,2 @@
 EXEC	[dbo].[SELECT_FOR_DASHBOARD]
-		  @pDashboardName = N'Product Catalog Dashboard'
+		  @pDashboardName = N'Product Inventory Dashboard'

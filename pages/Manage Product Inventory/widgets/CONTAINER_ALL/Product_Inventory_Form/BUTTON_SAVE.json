@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "buttonColor": "#22c55e",
   "buttonVariant": "PRIMARY",
@@ -33,7 +33,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{SP_INSER_INVENTORY.run().then(() => {\n  removeValue('EditInventory');\n  navigateTo('Product Inventory Dashboard', {}, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{JS.confirmButtonClick();}}",
   "originalBottomRow": 61,
   "originalTopRow": 57,
   "parentColumnSpace": 19.5,

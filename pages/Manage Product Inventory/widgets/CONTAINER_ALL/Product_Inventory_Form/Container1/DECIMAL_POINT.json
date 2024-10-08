@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 21,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{DefaultInventory.DECIMAL_POINT.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,6 +15,9 @@
     },
     {
       "key": "isRequired"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,7 +32,7 @@
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": "{{SP_SELECTPRODUCTCATALOG.data[0] === undefined || SP_SELECTPRODUCTCATALOG.data[0].PRODUCT_TYPE_EN.includes(\"Meter\")}}",
+  "isRequired": "{{appsmith.store[\"PageType\"] === PageTypes.Meter}}",
   "isVisible": true,
   "key": "nwk391w658",
   "label": "Decimal Precision",
@@ -49,6 +52,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
+  "originalBottomRow": 21,
+  "originalTopRow": 16,
   "parentColumnSpace": 19.5,
   "parentId": "5mldbf86rj",
   "parentRowSpace": 10,

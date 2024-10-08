@@ -30,7 +30,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{SP_SER_SEARCH_FOR_PRODUCT_CATA.run()}}",
+  "onClick": "{{SP_SER_SEARCH_FOR_PRODUCT_INV.run()}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentColumnSpace": 19.5,

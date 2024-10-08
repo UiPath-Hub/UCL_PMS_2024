@@ -3,6 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 26,
+  "bottomRowBeforeCollapse": 26,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( SP_SELECTPRODUCTCATALOG.data.length == 0?\"\":SP_SELECTPRODUCTCATALOG.data[0].FLOOR_NO.toString()))(FLOOR_NO.options, FLOOR_NO.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -17,20 +18,32 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
-  "isVisible": true,
+  "isRequired": "{{PRODUCT_TYPE.selectedOptionValue.includes(\"Leased Space\")}}",
+  "isVisible": "{{PRODUCT_TYPE.selectedOptionValue.includes(\"Leased Space\")}}",
   "key": "72xnnx6qo8",
   "labelAlignment": "left",
   "labelPosition": "Left",
@@ -48,8 +61,8 @@
   "needsErrorInfo": false,
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 24,
-  "originalTopRow": 20,
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
   "parentColumnSpace": 19.5,
   "parentId": "dhkjjujsed",
   "parentRowSpace": 10,
@@ -60,6 +73,7 @@
   "serverSideFiltering": false,
   "sourceData": "{{SP_SELECTDROPDOWN_FLOOR.data.map( (obj) =>{ return  {'label': obj.FIXED_VALUE, 'value': obj.SYSTEM_VALUE } })}}",
   "topRow": 22,
+  "topRowBeforeCollapse": 22,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "rej6q60gae",
