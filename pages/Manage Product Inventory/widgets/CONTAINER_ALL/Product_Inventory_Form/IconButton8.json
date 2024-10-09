@@ -27,7 +27,7 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Modal_Select_Catalog_Name.name);}}",
+  "onClick": "{{showModal(Modal_SelectProduct.name);}}",
   "originalBottomRow": 10,
   "originalTopRow": 6,
   "parentColumnSpace": 19.1875,

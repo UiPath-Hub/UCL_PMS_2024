@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 19,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -41,10 +44,10 @@
   "mobileRightColumn": 55,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
-  "originalBottomRow": 33,
-  "originalTopRow": 29,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
   "parentColumnSpace": 19.5,
   "parentId": "37mz4vrrp2",
   "parentRowSpace": 10,
@@ -53,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 18,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"A\",\n    \"code\": \"A\"\n  },\n  {\n    \"name\": \"B\",\n    \"code\": \"B\"\n\n  },\n  {\n    \"name\": \"C\",\n    \"code\": \"C\"\n\n  },\n  {\n    \"name\": \"D\",\n    \"code\": \"D\"\n\n  }\n]",
+  "sourceData": "{{SP_SELECTDROPDOWN_ZONE.data.map( (obj) =>{ return  {'label': obj.FIXED_VALUE, 'value': obj.SYSTEM_VALUE } })}}",
   "topRow": 15,
   "type": "SELECT_WIDGET",
   "version": 1,

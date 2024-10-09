@@ -26,7 +26,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{Table_Catalog_Results.selectedRow===undefined || Table_Catalog_Results.selectedRow.PRODUCT_ID==\"\"}}",
+  "isDisabled": "{{Table_Catalog_Results2.selectedRow===undefined || Table_Catalog_Results2.selectedRow.PRODUCT_ID==\"\"}}",
   "isLoading": false,
   "isVisible": true,
   "key": "6fgfm4o8oh",
@@ -37,7 +37,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{SP_SELECTPRODUCTCATALOG.run().then(() => {\n  closeModal('');\n  JS.setPageType();\n});}}",
+  "onClick": "{{JS.selectedProductButtonClick();}}",
   "originalBottomRow": 46,
   "originalTopRow": 42,
   "parentId": "dffii2j2mz",

@@ -17,6 +17,9 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -49,8 +52,8 @@
   "mobileRightColumn": 55,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
   "originalBottomRow": 26,
   "originalTopRow": 21,
   "parentColumnSpace": 19.5,
@@ -61,7 +64,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 27,
   "serverSideFiltering": false,
-  "sourceData": "[\n{\n    \"name\": \"Direct\",\n    \"code\": \"Direct\"\n  },\n  {\n    \"name\": \"30/5\",\n    \"code\": \"30/5\"\n  },\n  {\n    \"name\": \"50/5\",\n    \"code\": \"50/5\"\n  },\n    {\n    \"name\": \"100/5\",\n    \"code\": \"100/5\"\n  },\n    {\n    \"name\": \"150/5\",\n    \"code\": \"150/5\"\n  },\n    {\n    \"name\": \"200/5\",\n    \"code\": \"200/5\"\n  },  {\n    \"name\": \"250/5\",\n    \"code\": \"250/5\"\n  },\n    {\n    \"name\": \"300/5\",\n    \"code\": \"300/5\"\n  },  {\n    \"name\": \"400/5\",\n    \"code\": \"400/5\"\n  }\n]",
+  "sourceData": "{{SP_SELECTDROPDOWN_CT.data.map( (obj) =>{ return  {'label': obj.FIXED_VALUE, 'value': obj.SYSTEM_VALUE } })}}",
   "topRow": 21,
   "type": "SELECT_WIDGET",
   "version": 1,

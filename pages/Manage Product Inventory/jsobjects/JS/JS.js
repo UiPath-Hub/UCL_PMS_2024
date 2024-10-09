@@ -1,6 +1,6 @@
 export default {
 	setPageType:(PRODUCT_TYPE)=>{
-		PRODUCT_TYPE = PRODUCT_TYPE!==undefined?PRODUCT_TYPE:Table_Catalog_Results.selectedRow.PRODUCT_TYPE;
+		PRODUCT_TYPE = PRODUCT_TYPE!==undefined?PRODUCT_TYPE:Table_Catalog_Results2.selectedRow.PRODUCT_TYPE;
 		let identifyText = PRODUCT_TYPE;
 		if(identifyText !== undefined && identifyText !== ""){
 			if( identifyText.includes("Space")) storeValue("PageType", PageTypes.Space);
@@ -9,8 +9,8 @@ export default {
 		}
 	},
 	setProductCatalog:()=>{
-		PRODUCT_NAME.setValue(Table_Catalog_Results.selectedRow.PRODUCT_NAME);
-		PRODUCT_TYPE.setValue(Table_Catalog_Results.selectedRow.PRODUCT_TYPE)
+		PRODUCT_NAME.setValue(Table_Catalog_Results2.selectedRow.PRODUCT_NAME);
+		PRODUCT_TYPE.setValue(Table_Catalog_Results2.selectedRow.PRODUCT_TYPE)
 	},
 	isROFRRequired:()=>{
 		if(appsmith.store["PageType"]=== PageTypes.Space){
@@ -20,10 +20,20 @@ export default {
 		}
 		return false;
 	},
+	selectedProductButtonClick:()=>{
+		SP_SELECTPRODUCTCATALOG.run().then(() => {
+			Object.keys(SelectedProduct).forEach((key)=>{
+				if(SP_SELECTPRODUCTCATALOG.data[0][key] !== null)
+						SelectedProduct[key].data = SP_SELECTPRODUCTCATALOG.data[0][key];
+			});
+  		closeModal(Modal_SelectProduct.name);
+  		this.setPageType();
+		});
+	},
 	confirmButtonClick:()=>{
 		const finallyDone = ()=>{
 			removeValue("EditInventory");
-			//navigateTo('Product Inventory Dashboard', {}, 'SAME_WINDOW');
+			navigateTo('Product Inventory Dashboard', {}, 'SAME_WINDOW');
 		}
 		if(appsmith.store.EditInventory===undefined){
 			//add

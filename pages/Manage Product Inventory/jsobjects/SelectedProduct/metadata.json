@@ -6,6 +6,27 @@
     "pageId": "Manage Product Inventory",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "PRODUCT_NAME",
+        "value": "{\n  data: \"\"\n}"
+      },
+      {
+        "name": "PRODUCT_ID",
+        "value": "{\n  data: \"\"\n}"
+      },
+      {
+        "name": "PRODUCT_TYPE",
+        "value": "{\n  data: \"\"\n}"
+      },
+      {
+        "name": "AVAILABLE_UNIT",
+        "value": "{\n  data: \"\"\n}"
+      },
+      {
+        "name": "FLOOR_NO",
+        "value": "{\n  data: \"\"\n}"
+      }
+    ]
   }
 }

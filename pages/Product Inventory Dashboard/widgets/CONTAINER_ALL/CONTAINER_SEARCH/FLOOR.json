@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 9,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -41,10 +44,10 @@
   "mobileRightColumn": 55,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
-  "originalBottomRow": 76,
-  "originalTopRow": 72,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 9,
+  "originalTopRow": 5,
   "parentColumnSpace": 19.5,
   "parentId": "37mz4vrrp2",
   "parentRowSpace": 10,
@@ -53,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 18,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"17\",\n    \"code\": \"17\"\n  },\n  {\n    \"name\": \"18\",\n    \"code\": \"18\"\n  },\n    {\n    \"name\": \"19\",\n    \"code\": \"19\"\n  },\n    {\n    \"name\": \"20\",\n    \"code\": \"20\"\n  },\n    {\n    \"name\": \"21\",\n    \"code\": \"21\"\n  }\n]",
+  "sourceData": "{{SP_SELECTDROPDOWN_FLOOR.data.map( (obj) =>{ return  {'label': obj.FIXED_VALUE, 'value': obj.SYSTEM_VALUE } })}}",
   "topRow": 5,
   "type": "SELECT_WIDGET",
   "version": 1,

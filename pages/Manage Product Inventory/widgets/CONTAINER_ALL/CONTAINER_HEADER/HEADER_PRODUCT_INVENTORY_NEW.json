@@ -8,6 +8,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,7 +38,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 34,
   "shouldTruncate": false,
-  "text": "Product Inventory",
+  "text": "{{appsmith.store.EditInventory===undefined?\"New\":\"Edit\"}} Product Inventory",
   "textAlign": "LEFT",
   "textColor": "#1d4ed8",
   "topRow": 0,

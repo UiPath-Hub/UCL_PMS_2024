@@ -6,6 +6,4 @@ EXECUTE [dbo].[SER_SEARCH_FOR_PRODUCT_INVENTORY]
   ,@pUnit ={{UNIT.text   !== ""?`${UNIT.text}`:null}}
   ,@pInventoryStatus ={{STATUS.selectedOptionValue   !== ""?`${STATUS.selectedOptionValue}`:null}}
   ,@pZone ={{ZONE.selectedOptionValue   !== ""?`${ZONE.selectedOptionValue}`:null}}
-  ,@pDateFrom ={{DATE_FROM.selectedDate   !== ""?"moment(DATE_FROM.selectedDate).format()":null}}
-  ,@pDateTo ={{DATE_TO.selectedDate   !== ""?"moment(DATE_TO.selectedDate).format()":null}}
   ,@pTOP = 50

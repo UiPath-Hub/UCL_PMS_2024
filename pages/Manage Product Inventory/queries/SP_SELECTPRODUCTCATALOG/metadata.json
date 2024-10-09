@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "EXECUTE [dbo].[SELECT_FOR_PRODUCT_CATALOG] \n   @PRODUCT_ID = {{this.params.PRODUCT_ID!== undefined && this.params.PRODUCT_ID !== \"\"?this.params.PRODUCT_ID: Table_Catalog_Results.selectedRow.PRODUCT_ID}}\n\n",
+      "body": "EXECUTE [dbo].[SELECT_FOR_PRODUCT_CATALOG] \n   @PRODUCT_ID = {{this.params.PRODUCT_ID!== undefined && this.params.PRODUCT_ID !== \"\"?this.params.PRODUCT_ID: Table_Catalog_Results2.selectedRow.PRODUCT_ID}}\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 16,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( SelectedProduct.FLOOR_NO().toString()))(FLOOR_NO.options, FLOOR_NO.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( SelectedProduct.FLOOR_NO.data.toString()))(FLOOR_NO.options, FLOOR_NO.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,19 +14,34 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": true,
+  "isDisabled": "{{!PRODUCT_TYPE.text.includes(\"Meter\")}}",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": "{{PRODUCT_TYPE.text.includes(\"Meter\")}}",
   "isVisible": true,
   "key": "72xnnx6qo8",
   "labelAlignment": "left",
@@ -43,8 +58,8 @@
   "mobileRightColumn": 55,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
   "originalBottomRow": 16,
   "originalTopRow": 11,
   "parentColumnSpace": 19.5,
@@ -55,7 +70,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"17\",\n    \"code\": \"17\"\n  },\n  {\n    \"name\": \"18\",\n    \"code\": \"18\"\n  },\n    {\n    \"name\": \"19\",\n    \"code\": \"19\"\n  },\n    {\n    \"name\": \"20\",\n    \"code\": \"20\"\n  },\n    {\n    \"name\": \"1\",\n    \"code\": \"1\"\n  }\n]",
+  "sourceData": "{{SP_SELECTDROPDOWN_FLOOR.data.map( (obj) =>{ return  {'label': obj.FIXED_VALUE, 'value': obj.SYSTEM_VALUE } })}}",
   "topRow": 11,
   "type": "SELECT_WIDGET",
   "version": 1,
