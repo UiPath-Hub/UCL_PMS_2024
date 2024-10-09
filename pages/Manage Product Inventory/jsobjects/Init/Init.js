@@ -5,9 +5,9 @@ export default {
 			SP_SELECTPRODUCTCATALOG.run(appsmith.store.EditInventory).then(()=>{
 				if( SP_SELECTPRODUCTCATALOG.data.length>0){
 					Object.keys(SelectedProduct).forEach((key)=>{
-						if(SP_SELECTPRODUCTCATALOG.data[0][key] !== null)
+						if(SP_SELECTPRODUCTCATALOG.data[0][key] !== null && SelectedProduct[key.toString()] !== undefined)
 						SelectedProduct[key.toString()].data = SP_SELECTPRODUCTCATALOG.data[0][key];
-						console.log(SelectedProduct[key.toString()].data)
+						//console.log(SelectedProduct[key.toString()].data)
 					});
 					//storeValue("defaultProductCatalog",SP_SELECTPRODUCTCATALOG.data[0]);
 					JS.setPageType(SP_SELECTPRODUCTCATALOG.data[0].PRODUCT_TYPE_TH+SP_SELECTPRODUCTCATALOG.data[0].PRODUCT_TYPE_EN);

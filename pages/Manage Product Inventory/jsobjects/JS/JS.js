@@ -23,8 +23,10 @@ export default {
 	selectedProductButtonClick:()=>{
 		SP_SELECTPRODUCTCATALOG.run().then(() => {
 			Object.keys(SelectedProduct).forEach((key)=>{
-				if(SP_SELECTPRODUCTCATALOG.data[0][key] !== null)
-						SelectedProduct[key].data = SP_SELECTPRODUCTCATALOG.data[0][key];
+				key = key.toString();
+				if(SP_SELECTPRODUCTCATALOG.data[0][key] !== null && SelectedProduct[key] !== undefined)
+					SelectedProduct[key].data = SP_SELECTPRODUCTCATALOG.data[0][key];
+				console.log(`${key}:${SelectedProduct[key].data}`)
 			});
   		closeModal(Modal_SelectProduct.name);
   		this.setPageType();
@@ -59,6 +61,6 @@ export default {
 		
 	},
 	test:()=>{
-		console.log(DefaultInventory.INVENTORY_ID.data)
+		console.log(SelectedProduct.AVAILABLE_UNIT.data)
 	}
 }

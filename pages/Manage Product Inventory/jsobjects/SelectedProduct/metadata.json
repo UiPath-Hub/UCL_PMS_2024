@@ -8,24 +8,32 @@
     "pluginType": "JS",
     "variables": [
       {
-        "name": "PRODUCT_NAME",
-        "value": "{\n  data: \"\"\n}"
+        "name": "PRODUCT_NAME_EN",
+        "value": "{\n  \"data\": \"\"\n}"
+      },
+      {
+        "name": "PRODUCT_NAME_TH",
+        "value": "{\n  \"data\": \"\"\n}"
       },
       {
         "name": "PRODUCT_ID",
-        "value": "{\n  data: \"\"\n}"
+        "value": "{\n  \"data\": \"\"\n}"
       },
       {
-        "name": "PRODUCT_TYPE",
-        "value": "{\n  data: \"\"\n}"
+        "name": "PRODUCT_TYPE_EN",
+        "value": "{\n  \"data\": \"\"\n}"
+      },
+      {
+        "name": "PRODUCT_TYPE_TH",
+        "value": "{\n  \"data\": \"\"\n}"
       },
       {
         "name": "AVAILABLE_UNIT",
-        "value": "{\n  data: \"\"\n}"
+        "value": "{\n  \"data\": \"\"\n}"
       },
       {
         "name": "FLOOR_NO",
-        "value": "{\n  data: \"\"\n}"
+        "value": "{\n  \"data\": \"\"\n}"
       }
     ]
   }

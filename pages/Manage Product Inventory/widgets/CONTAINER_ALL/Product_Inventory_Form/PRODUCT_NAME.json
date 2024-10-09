@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultText": "{{SelectedProduct.PRODUCT_NAME.data}}",
+  "defaultText": "{{`${SelectedProduct.PRODUCT_NAME_TH.data}/${SelectedProduct.PRODUCT_NAME_EN.data}`}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
