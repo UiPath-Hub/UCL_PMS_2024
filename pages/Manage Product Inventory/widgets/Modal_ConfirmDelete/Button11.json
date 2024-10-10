@@ -29,7 +29,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{SP_DELETE.run()}}",
+  "onClick": "{{JS.deleteButtonClick();}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "xg19d19tyq",

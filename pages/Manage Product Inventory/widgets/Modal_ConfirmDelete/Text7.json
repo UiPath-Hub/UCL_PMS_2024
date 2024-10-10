@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "Inventory Name : {{DefaultInventory.INVENTORY_ID.data}}",
+  "text": "Inventory Name : {{DefaultInventory.INVENTORY_NAME.data}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 6,

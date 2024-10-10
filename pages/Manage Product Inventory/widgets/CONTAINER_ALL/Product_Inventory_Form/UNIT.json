@@ -61,7 +61,7 @@
   "showStepArrows": false,
   "topRow": 26,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{parseFloat(UNIT.text)<=parseFloat(AVAILABLE_UNIT.text)}}",
+  "validation": "{{parseFloat(UNIT.text)<=(parseFloat(AVAILABLE_UNIT.text)+parseFloat(DefaultInventory.UNIT.data))}}",
   "version": 2,
   "widgetId": "cs8asgfpa7",
   "widgetName": "UNIT"

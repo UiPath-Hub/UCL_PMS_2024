@@ -60,6 +60,21 @@ export default {
 		}
 		
 	},
+	deleteButtonClick:()=>{
+		const finallyDone = ()=>{
+			removeValue("EditInventory");
+			navigateTo('Product Inventory Dashboard', {}, 'SAME_WINDOW');
+		}
+		SP_DELETE.run().then(()=>{
+			if(SP_DELETE.data !== undefined && SP_DELETE.data.length === 1){
+				if( SP_DELETE.data[0].RESULT_CODE === "ERROR"){
+					showAlert( SP_DELETE.data[0].RESULT_MESSAGES,"error");
+					Init.LoadDefaultProductCatalog();
+					Init.LoadDefaultProductInventory();
+				}else finallyDone();
+				}
+		})
+	},
 	test:()=>{
 		console.log(SelectedProduct.AVAILABLE_UNIT.data)
 	}
