@@ -36,9 +36,10 @@
     "AVAILABLE_UNIT",
     "STATUS",
     "PRODUCT_TYPE",
-    "PRODUCT_NAME"
+    "PRODUCT_NAME",
+    "TOTAL_RECORDS"
   ],
-  "columnUpdatedAt": 1728378383479,
+  "columnUpdatedAt": 1728549999615,
   "columnWidthMap": {},
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
@@ -76,6 +77,12 @@
     },
     {
       "key": "primaryColumns.PRODUCT_NAME.computedValue"
+    },
+    {
+      "key": "primaryColumns.TOTAL_RECORDS.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -83,7 +90,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -104,9 +115,11 @@
   "mobileRightColumn": 29,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
+  "onPageChange": "{{storeValue(Paginatation.SearchingResultsPageIndex, Table_Catalog_Results.pageNo).then(() => {\n  SP_SER_SEARCH_FOR_PR_CATALOG.run();\n});}}",
   "parentColumnSpace": 10.03125,
   "parentId": "b9u48c8dus",
   "parentRowSpace": 10,
+  "primaryColumnId": "PRODUCT_ID",
   "primaryColumns": {
     "AVAILABLE_UNIT": {
       "alias": "AVAILABLE_UNIT",
@@ -263,6 +276,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "TOTAL_RECORDS": {
+      "alias": "TOTAL_RECORDS",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOTAL_RECORDS\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "TOTAL_RECORDS",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "TOTAL_RECORDS",
+      "notation": "standard",
+      "originalId": "TOTAL_RECORDS",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "TOTAL_UNIT": {
       "alias": "TOTAL_UNIT",
       "allowCellWrapping": false,
@@ -299,10 +346,11 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "tableData": "{{SP_SER_SEARCH_FOR_PR_CATALOG.data}}",
   "textSize": "0.875rem",
   "topRow": 13,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{((SP_SER_SEARCH_FOR_PR_CATALOG.data !== undefined) && (SP_SER_SEARCH_FOR_PR_CATALOG.data.length !== 0) && (SP_SER_SEARCH_FOR_PR_CATALOG.data[0][\"TOTAL_RECORDS\"] !== undefined))?SP_SER_SEARCH_FOR_PR_CATALOG.data[0][\"TOTAL_RECORDS\"]:0}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

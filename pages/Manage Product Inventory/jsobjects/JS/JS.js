@@ -1,6 +1,6 @@
 export default {
 	setPageType:(PRODUCT_TYPE)=>{
-		PRODUCT_TYPE = PRODUCT_TYPE!==undefined?PRODUCT_TYPE:Table_Catalog_Results2.selectedRow.PRODUCT_TYPE;
+		PRODUCT_TYPE = PRODUCT_TYPE!==undefined?PRODUCT_TYPE:Table_Catalog_Results.selectedRow.PRODUCT_TYPE;
 		let identifyText = PRODUCT_TYPE;
 		if(identifyText !== undefined && identifyText !== ""){
 			if( identifyText.includes("Space")) storeValue("PageType", PageTypes.Space);
@@ -9,8 +9,8 @@ export default {
 		}
 	},
 	setProductCatalog:()=>{
-		PRODUCT_NAME.setValue(Table_Catalog_Results2.selectedRow.PRODUCT_NAME);
-		PRODUCT_TYPE.setValue(Table_Catalog_Results2.selectedRow.PRODUCT_TYPE)
+		PRODUCT_NAME.setValue(Table_Catalog_Results.selectedRow.PRODUCT_NAME);
+		PRODUCT_TYPE.setValue(Table_Catalog_Results.selectedRow.PRODUCT_TYPE);
 	},
 	isROFRRequired:()=>{
 		if(appsmith.store["PageType"]=== PageTypes.Space){
@@ -26,7 +26,7 @@ export default {
 				key = key.toString();
 				if(SP_SELECTPRODUCTCATALOG.data[0][key] !== null && SelectedProduct[key] !== undefined)
 					SelectedProduct[key].data = SP_SELECTPRODUCTCATALOG.data[0][key];
-				console.log(`${key}:${SelectedProduct[key].data}`)
+				//console.log(`${key}:${SelectedProduct[key].data}`)
 			});
   		closeModal(Modal_SelectProduct.name);
   		this.setPageType();
@@ -44,8 +44,8 @@ export default {
 				if( SP_HANDLE_INSERT_INVENTORY.data[0].RESULT_CODE === "ERROR"){
 					showAlert( SP_HANDLE_INSERT_INVENTORY.data[0].RESULT_MESSAGES,"error");
 					SP_SELECTPRODUCTCATALOG.run();
-				}
 				}else finallyDone();
+				}
 			});
 		}else{
 			//edit
@@ -54,8 +54,8 @@ export default {
 				if( SP_UPDATE_PRODUCT_INVENTORY.data[0].RESULT_CODE === "ERROR"){
 					showAlert( SP_UPDATE_PRODUCT_INVENTORY.data[0].RESULT_MESSAGES,"error");
 					SP_SELECTPRODUCTCATALOG.run();
-				}
 				}else finallyDone();
+				}
 			});
 		}
 		

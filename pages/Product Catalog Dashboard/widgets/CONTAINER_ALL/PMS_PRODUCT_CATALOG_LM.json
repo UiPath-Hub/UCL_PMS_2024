@@ -38,15 +38,16 @@
     "PRODUCT_TYPE",
     "TOTAL_UNIT",
     "AVAILABLE_UNIT",
-    "STATUS"
+    "STATUS",
+    "TOTAL_RECORDS"
   ],
-  "columnUpdatedAt": 1728446469576,
+  "columnUpdatedAt": 1728544147545,
   "columnWidthMap": {
     "AVAILABLE_UNIT": 72,
     "Avaliable_Unit": 171,
     "CompanyName": 294,
     "Email": 229,
-    "PRODUCT_ID": 151,
+    "PRODUCT_ID": 192,
     "PRODUCT_NAME": 316,
     "PRODUCT_TYPE": 247,
     "PRODUCT_TYPE_TH": 165,
@@ -98,6 +99,12 @@
     },
     {
       "key": "primaryColumns.PRODUCT_NAME.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.TOTAL_RECORDS.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -105,7 +112,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "CENTER",
@@ -126,11 +137,13 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 79,
   "needsErrorInfo": false,
+  "onPageChange": "{{storeValue(Paginatation.SearchingResultsPageIndex, PMS_PRODUCT_CATALOG_LM.pageNo).then(() => {\n  SP_SER_SEARCH_FOR_PRODUCT_CATA.run();\n});}}",
   "originalBottomRow": 107,
   "originalTopRow": 59,
   "parentColumnSpace": 20.09375,
   "parentId": "6b4e01zwxd",
   "parentRowSpace": 10,
+  "primaryColumnId": "PRODUCT_ID",
   "primaryColumns": {
     "AVAILABLE_UNIT": {
       "alias": "AVAILABLE_UNIT",
@@ -302,6 +315,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "TOTAL_RECORDS": {
+      "alias": "TOTAL_RECORDS",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#f4f4f5",
+      "columnType": "number",
+      "computedValue": "{{PMS_PRODUCT_CATALOG_LM.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TOTAL_RECORDS\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "TOTAL_RECORDS",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "TOTAL_RECORDS",
+      "notation": "standard",
+      "originalId": "TOTAL_RECORDS",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "1rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "TOTAL_UNIT": {
       "alias": "TOTAL_UNIT",
       "allowCellWrapping": false,
@@ -345,7 +392,7 @@
   "tableData": "{{SP_SER_SEARCH_FOR_PRODUCT_CATA.data}}",
   "textSize": "1rem",
   "topRow": 59,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{((SP_SER_SEARCH_FOR_PRODUCT_CATA.data !== undefined) && (SP_SER_SEARCH_FOR_PRODUCT_CATA.data.length !== 0) && (SP_SER_SEARCH_FOR_PRODUCT_CATA.data[0][\"TOTAL_RECORDS\"] !== undefined))?SP_SER_SEARCH_FOR_PRODUCT_CATA.data[0][\"TOTAL_RECORDS\"]:0}}",
   "type": "TABLE_WIDGET_V2",
   "variant": "DEFAULT",
   "version": 2,

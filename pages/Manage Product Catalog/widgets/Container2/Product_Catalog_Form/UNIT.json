@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 13,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( SP_SELECTPRODUCTCATALOG.data.length == 0?\"\":`${SP_SELECTPRODUCTCATALOG.data[0].UNIT_TH}/${SP_SELECTPRODUCTCATALOG.data[0].UNIT_EN}`))(UNIT.options, UNIT.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -59,7 +59,7 @@
   "rightColumn": 56,
   "serverSideFiltering": false,
   "sourceData": "{{SP_SELECTDROPDOWN_UNIT.data.map( (obj) =>{ return  {'label': obj.FIXED_VALUE, 'value': obj.SYSTEM_VALUE } })}}",
-  "topRow": 6,
+  "topRow": 9,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "mmhjjfwpq5",

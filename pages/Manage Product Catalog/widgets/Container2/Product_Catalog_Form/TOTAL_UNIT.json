@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 21,
   "boxShadow": "none",
   "defaultText": "{{SP_SELECTPRODUCTCATALOG.data.length == 0?\"\":SP_SELECTPRODUCTCATALOG.data[0].TOTAL_UNIT}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "rightColumn": 56,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 14,
+  "topRow": 17,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ym7j624tyw",

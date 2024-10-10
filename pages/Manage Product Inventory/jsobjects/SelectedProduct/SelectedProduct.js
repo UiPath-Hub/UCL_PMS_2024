@@ -6,4 +6,5 @@ export default {
 	,PRODUCT_TYPE_TH:{"data":""}
 	,AVAILABLE_UNIT:{"data":""}
 	,FLOOR_NO:{"data":""}
+	,FREE_UNIT:{"data":""}
 }

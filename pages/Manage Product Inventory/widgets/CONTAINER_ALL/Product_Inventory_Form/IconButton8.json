@@ -8,6 +8,14 @@
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -16,7 +24,7 @@
     }
   ],
   "iconName": "search",
-  "isDisabled": false,
+  "isDisabled": "{{appsmith.store.EditInventory!==undefined}}",
   "isLoading": false,
   "isVisible": true,
   "key": "3rv4og275i",

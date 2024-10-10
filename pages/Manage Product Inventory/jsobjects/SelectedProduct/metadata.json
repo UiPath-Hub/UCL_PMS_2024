@@ -34,6 +34,10 @@
       {
         "name": "FLOOR_NO",
         "value": "{\n  \"data\": \"\"\n}"
+      },
+      {
+        "name": "FREE_UNIT",
+        "value": "{\n  \"data\": \"\"\n}"
       }
     ]
   }

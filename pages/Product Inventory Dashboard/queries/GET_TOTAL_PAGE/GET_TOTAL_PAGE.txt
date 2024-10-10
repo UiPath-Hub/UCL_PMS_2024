@@ -1,0 +1,12 @@
+DECLARE @PageSize INT = 10;
+DECLARE @TotalRows INT;
+DECLARE @TotalPages INT;
+
+-- Count total rows
+SELECT @TotalRows = COUNT(*)
+FROM PMS_PRODUCT_INVENTORY_LM;
+
+-- Calculate total pages
+SET @TotalPages = CEILING(@TotalRows / @PageSize);
+
+SELECT @TotalPages AS TotalPages;

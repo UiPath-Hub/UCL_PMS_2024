@@ -1,7 +1,9 @@
 EXEC [dbo].[SER_SEARCH_FOR_PRODUCT_CATALOG]
 		@pProductCatalogNo = {{PRODUCT_CATALOG_NUMBER.text!== ""?`${PRODUCT_CATALOG_NUMBER.text}`:null}},
 		@pProductName = {{PRODUCT_NAME.text!== ""?`${PRODUCT_NAME.text}`:null}},
-		@pProducType = {{TYPE.selectedOptionValue!== ""?`${TYPE.selectedOptionValue}`:null}},
+		@pProductType = {{TYPE.selectedOptionValue!== ""?`${TYPE.selectedOptionValue}`:null}},
 		@pProductCatalogStatus = {{STATUS.selectedOptionValue!== ""?`${STATUS.selectedOptionValue}`:null}},
 		@pAvailableUnit = {{AVAILABLE_UNIT.text !== ""?AVAILABLE_UNIT.text:null}},
-		@pTotalUnit = {{TOTAL_UNIT.text !== ""?TOTAL_UNIT.text:null}}
+		@pTotalUnit = {{TOTAL_UNIT.text !== ""?TOTAL_UNIT.text:null}},
+		@pPageSize = 10,
+    @pPageIndex = {{appsmith.store[Paginatation.SearchingResultsPageIndex]!== undefined?appsmith.store[Paginatation.SearchingResultsPageIndex]:1}}

@@ -21,7 +21,7 @@
     }
   ],
   "iconName": "edit",
-  "isDisabled": "{{PMS_PRODUCT_INVENTORY_LM.selectedRow.INVENTORY_ID===\"\"||PMS_PRODUCT_INVENTORY_LM.selectedRow.INVENTORY_ID===undefined}}",
+  "isDisabled": "{{PMS_PRODUCT_INVENTORY_LM.selectedRow===undefined||PMS_PRODUCT_INVENTORY_LM.selectedRow.INVENTORY_ID===\"\"}}",
   "isLoading": false,
   "isVisible": true,
   "key": "sjcapm6fvo",

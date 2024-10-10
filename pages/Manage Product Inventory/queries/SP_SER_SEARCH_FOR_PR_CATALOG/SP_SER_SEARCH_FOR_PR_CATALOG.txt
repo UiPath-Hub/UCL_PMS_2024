@@ -1,8 +1,9 @@
 EXEC [dbo].[SER_SEARCH_FOR_PRODUCT_CATALOG]
 		@pProductCatalogNo = null,
-		@pProductName = {{INPUT_CatalogName2.text!== ""?`${INPUT_CatalogName2.text}`:null}},
-		@pProducType = null,
+		@pProductName = {{INPUT_CatalogName.text!== ""?`${INPUT_CatalogName.text}`:null}},
+		@pProductType = null,
 		@pProductCatalogStatus = null,
 		@pAvailableUnit = null,
 		@pTotalUnit = null,
-		@pTOP = 10
+		@pPageSize = 5,
+    @pPageIndex = 1

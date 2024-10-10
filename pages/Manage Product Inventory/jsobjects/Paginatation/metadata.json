@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66de956ac05adf72589749ca_8887a545-2128-425c-b889-4683a5fa10d1",
+  "id": "Manage Product Inventory_Paginatation",
+  "unpublishedCollection": {
+    "name": "Paginatation",
+    "pageId": "Manage Product Inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "SearchingResultsPageIndex",
+        "value": "\"SearchingResultsPageIndex\""
+      }
+    ]
+  }
+}
