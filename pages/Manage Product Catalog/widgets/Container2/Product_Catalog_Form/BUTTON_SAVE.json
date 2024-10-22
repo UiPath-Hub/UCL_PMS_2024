@@ -37,7 +37,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{JS.submitData().then(() => { removeValue(\"EditCatalog\").then(()=>{\n\t\t\n\t})\n});}}",
+  "onClick": "{{ JS.submitData() }}",
   "originalBottomRow": 61,
   "originalTopRow": 57,
   "parentColumnSpace": 19.5,

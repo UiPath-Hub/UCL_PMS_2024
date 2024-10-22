@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 55,
+  "boxShadow": "none",
+  "defaultText": "{{DefaultCompany.COMPANY_SOI_EN.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "regex"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": "{{DefaultCompany.COMPANY_SOI_EN.required}}",
+  "isVisible": true,
+  "key": "nwk391w658",
+  "label": "Soi (EN)",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "10",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 54,
+  "originalTopRow": 50,
+  "parentColumnSpace": 19.5,
+  "parentId": "e3df4phn2z",
+  "parentRowSpace": 10,
+  "regex": "{{DefaultCompany.COMPANY_SOI_EN.regex}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 29,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tooltip": "กรอกข้อความที่ต้องการแสดงในเอกสารภาษาอังกฤษ",
+  "topRow": 51,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "fzh0bs6rl0",
+  "widgetName": "COMPANY_SOI_EN"
+}

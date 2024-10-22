@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "EXECUTE [dbo].[UPDATE_PMS_PRODUCT_CATALOG_LM] \n   @pProductID = {{PRODUCT_ID.text}}\n  ,@pType = {{PRODUCT_TYPE.selectedOptionValue}}\n  ,@pNameEN = {{PRODUCT_NAME_EN.text}}\n  ,@pNameTH = {{PRODUCT_NAME_TH.text}}\n  ,@pUnit = {{UNIT.selectedOptionValue}}\n  ,@pAvaliableUnit = {{AVAILABLE_UNIT.text}}\n  ,@pTotalUnit = {{TOTAL_UNIT.text}}\n  ,@pFloor = {{FLOOR_NO.selectedOptionValue}}\n  ,@pStatus = {{STATUS.selectedOptionValue}}\n  ,@pProductCatalogDetail = {{PRODUCT_DETAIL.text}}\n  ,@UserID = 'Unknown'\n  ,@Active = {{SP_SELECTPRODUCTCATALOG.data.length == 0?0:SP_SELECTPRODUCTCATALOG.data[0].ACTIVE}}",
+      "body": "EXECUTE [dbo].[UPDATE_PMS_PRODUCT_CATALOG_LM] \n   @pProductID = {{PRODUCT_ID.text}}\n  ,@pType = {{PRODUCT_TYPE.selectedOptionValue}}\n  ,@pNameEN = {{PRODUCT_NAME_EN.text}}\n  ,@pNameTH = {{PRODUCT_NAME_TH.text}}\n  ,@pUnit = {{UNIT.selectedOptionValue}}\n  ,@pAvaliableUnit = {{AVAILABLE_UNIT.text}}\n  ,@pTotalUnit = {{TOTAL_UNIT.text}}\n  ,@pFloor = {{FLOOR_NO.selectedOptionValue}}\n  ,@pStatus = {{STATUS.selectedOptionValue}}\n  ,@pProductCatalogDetail = {{PRODUCT_DETAIL.text}}\n  ,@UserID = 'Unknown'\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

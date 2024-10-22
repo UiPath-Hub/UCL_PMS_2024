@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66de956ac05adf72589749ca_517e8989-8ed2-4014-8c93-7ba98c1cc603",
+  "id": "Company Dashboard_PageConfigs",
+  "unpublishedCollection": {
+    "name": "PageConfigs",
+    "pageId": "Company Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "editFlag",
+        "value": "\"editCompany\""
+      },
+      {
+        "name": "newCompanyTempFlag",
+        "value": "\"newCompanyTempFlag\""
+      }
+    ]
+  }
+}

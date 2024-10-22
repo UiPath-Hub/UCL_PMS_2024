@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66de956ac05adf72589749ca_a1a4452c-1189-474f-96dc-e6727508d955",
+  "id": "Manage Company Contact_PageConfigs",
+  "unpublishedCollection": {
+    "name": "PageConfigs",
+    "pageId": "Manage Company Contact",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "editFlag",
+        "value": "\"editCompanyContact\""
+      },
+      {
+        "name": "fromCompany",
+        "value": "\"fromCompany\""
+      }
+    ]
+  }
+}

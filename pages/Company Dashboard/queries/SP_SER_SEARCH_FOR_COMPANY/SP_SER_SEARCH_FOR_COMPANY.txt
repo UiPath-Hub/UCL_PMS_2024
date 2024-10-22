@@ -1,0 +1,11 @@
+
+EXECUTE [dbo].[SER_SEARCH_FOR_COMPANY] 
+   @pCompanyNo = {{COMPANY_ID.text == "" || COMPANY_ID.text == undefined ? null : COMPANY_ID.text}}
+,@pCompanyName = {{COMPANY_NAME.text == "" || COMPANY_NAME.text == undefined ? null : COMPANY_NAME.text}}
+,@pCompanyContact = {{COMPANY_CONTACT_NAME.text == "" || COMPANY_CONTACT_NAME.text == undefined ? null : COMPANY_CONTACT_NAME.text}}
+,@pMobile = {{COMPANY_CONTACT_MOBILE.text == "" || COMPANY_CONTACT_MOBILE.text == undefined ? null : COMPANY_CONTACT_MOBILE.text}}
+,@pBusinessType = {{COMPANY_BUSINESS_TYPE.selectedOptionValue == "" || COMPANY_BUSINESS_TYPE.selectedOptionValue == undefined ? null : COMPANY_BUSINESS_TYPE.selectedOptionValue}}
+,@pSTATUS = {{COMPANY_STATUS.selectedOptionValue == "" || COMPANY_STATUS.selectedOptionValue == undefined ? null : COMPANY_STATUS.selectedOptionValue}}
+
+  ,@pPageSize = {{Pagination.pageSize}}
+  ,@pPageIndex = {{PMS_COMPANY_LM.pageNo}}

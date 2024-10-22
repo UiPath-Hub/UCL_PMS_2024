@@ -1,0 +1,29 @@
+EXECUTE [dbo].[INSERT_PMS_COMPANY_LM] 
+	
+   @pCOMPANY_TYPE = {{COMPANY_TYPE.selectedOptionValue}}
+  ,@pCOMPANY_NAME_TH = {{COMPANY_NAME_TH.text}}
+  ,@pCOMPANY_NAME_EN = {{COMPANY_NAME_EN.text}}
+  ,@pSHOP_NAME = {{SHOP_NAME.text}}
+  ,@pTELEPHONE = {{TELEPHONE.text}}
+  ,@pSTATUS = {{STATUS.selectedOptionValue}}
+  ,@pCONTACT_EMAIL = {{CONTACT_EMAIL.text}}
+  ,@pCOMPANY_BUSINESS_TYPE = {{COMPANY_BUSINESS_TYPE.selectedOptionValue}}
+  ,@pFAX = {{FAX.text}}
+  ,@pTAX_ID = {{TAX_ID.text}}
+  ,@pWEBSITE = {{WEBSITE.text}}
+  ,@pCOMPANY_BUILDING_NAME_TH = {{COMPANY_BUILDING_NAME_TH.text}}
+  ,@pCOMPANY_BUILDING_NAME_EN = {{COMPANY_BUILDING_NAME_EN.text}}
+  ,@pCOMPANY_FLOOR = {{COMPANY_FLOOR.text}}
+  ,@pCOMPANY_ADD_NO = {{COMPANY_ADD_NO.text}}
+  ,@pCOMPANY_MOO = {{COMPANY_MOO.text}}
+  ,@pCOMPANY_SOI_TH = {{COMPANY_SOI_TH.text}}
+  ,@pCOMPANY_SOI_EN = {{COMPANY_SOI_EN.text}}
+  ,@pCOMPANY_ROAD_TH = {{COMPANY_ROAD_TH.text}}
+  ,@pCOMPANY_ROAD_EN = {{COMPANY_ROAD_EN.text}}
+  ,@pCOMPANY_SUB_DISTRICT = {{COMPANY_SUB_DISTRICT.selectedOptionValue}}
+  ,@pCOMPANY_DISTRICT = {{COMPANY_DISTRICT.selectedOptionValue}}
+  ,@pCOMPANY_PROVINCE = {{COMPANY_PROVINCE.selectedOptionValue}}
+  ,@pCOMPANY_POSTAL_CODE = {{COMPANY_POSTAL_CODE.text}}
+
+  ,@pUSER_ID = {{'test'}}
+  ,@pSectionID = {{'fixSession'}}

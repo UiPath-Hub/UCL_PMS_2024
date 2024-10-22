@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "boxShadow": "none",
+  "defaultText": "{{DefaultCompany.COMPANY_NAME_TH.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "regex"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": "{{DefaultCompany.COMPANY_NAME_TH.required}}",
+  "isVisible": true,
+  "key": "nwk391w658",
+  "label": "Company Name (TH)",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "10",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 21,
+  "originalTopRow": 17,
+  "parentColumnSpace": 19.5,
+  "parentId": "e3df4phn2z",
+  "parentRowSpace": 10,
+  "regex": "{{DefaultCompany.COMPANY_NAME_TH.regex}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 29,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tooltip": "ถ้าไม่มีภาษาไทยให้กรอกภาษาอังกฤษ",
+  "topRow": 12,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "vn9d1tm50b",
+  "widgetName": "COMPANY_NAME_TH"
+}

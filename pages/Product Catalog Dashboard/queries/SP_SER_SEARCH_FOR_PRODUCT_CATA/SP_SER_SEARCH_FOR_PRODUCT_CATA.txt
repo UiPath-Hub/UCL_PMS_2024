@@ -5,5 +5,5 @@ EXEC [dbo].[SER_SEARCH_FOR_PRODUCT_CATALOG]
 		@pProductCatalogStatus = {{STATUS.selectedOptionValue!== ""?`${STATUS.selectedOptionValue}`:null}},
 		@pAvailableUnit = {{AVAILABLE_UNIT.text !== ""?AVAILABLE_UNIT.text:null}},
 		@pTotalUnit = {{TOTAL_UNIT.text !== ""?TOTAL_UNIT.text:null}},
-		@pPageSize = 10,
-    @pPageIndex = {{appsmith.store[Paginatation.SearchingResultsPageIndex]!== undefined?appsmith.store[Paginatation.SearchingResultsPageIndex]:1}}
+		@pPageSize = {{Paginatation.pageSize }},
+    @pPageIndex = {{PMS_PRODUCT_CATALOG_LM.pageNo !== undefined?PMS_PRODUCT_CATALOG_LM.pageNo:1}}

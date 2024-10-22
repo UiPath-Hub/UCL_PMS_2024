@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66de956ac05adf72589749ca_22b19969-3f7b-4a1a-9ecc-2b36062a6815",
+  "id": "Company Dashboard_Init",
+  "unpublishedCollection": {
+    "name": "Init",
+    "pageId": "Company Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "dataDisplayStartTime",
+        "value": "moment(\"2021-01-01\", \"YYYY-MM-DD\")"
+      }
+    ]
+  }
+}

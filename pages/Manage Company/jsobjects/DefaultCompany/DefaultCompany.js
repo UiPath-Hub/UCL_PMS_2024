@@ -1,0 +1,33 @@
+export default {
+	COMPANY_ID:{data:"",regex:"",required:false}
+	,COMPANY_TYPE_NAME:{data:"",regex:"",required:false}
+	,COMPANY_NAME_TH:{data:"",regex:"",required:false}
+	,COMPANY_NAME_EN:{data:"",regex:"",required:false}
+	,SHOP_NAME:{data:"",regex:"",required:false}
+	,COMPANY_BUSINESS_TYPE_TH:{data:"",regex:"",required:false}
+	,COMPANY_BUSINESS_TYPE_EN:{data:"",regex:"",required:false}
+	,TAX_ID:{data:"",regex:"",required:false}
+	,STATUS:{data:"",regex:"",required:false}
+	,CREATE_DATE:{data:"",regex:"",required:false}
+	,TELEPHONE:{data:"",regex:"",required:false}
+	,CONTACT_EMAIL:{data:"",regex:"",required:false}
+	,FAX:{data:"",regex:"",required:false}
+	,WEBSITE:{data:"",regex:"",required:false}
+	,COMPANY_CODE_AUTOFLIGHT:{data:"",regex:"",required:false}
+	,COMPANY_BUILDING_NAME_EN:{data:"",regex:"",required:false}
+	,COMPANY_ADD_NO:{data:"",regex:"",required:false}
+	,COMPANY_MOO:{data:"",regex:"",required:false}
+	,COMPANY_SOI_EN:{data:"",regex:"",required:false}
+	,COMPANY_ROAD_EN:{data:"",regex:"",required:false}
+	,COMPANY_PROVINCE_TH:{data:"",regex:"",required:false}
+	,COMPANY_DISTRICT_TH:{data:"",regex:"",required:false}
+	,COMPANY_SUB_DISTRICT_TH:{data:"",regex:"",required:false}
+	,COMPANY_PROVINCE_EN:{data:"",regex:"",required:false}
+	,COMPANY_DISTRICT_EN:{data:"",regex:"",required:false}
+	,COMPANY_SUB_DISTRICT_EN:{data:"",regex:"",required:false}
+	,COMPANY_BUILDING_NAME_TH:{data:"",regex:"",required:false}
+	,COMPANY_FLOOR:{data:"",regex:"",required:false}
+	,COMPANY_SOI_TH:{data:"",regex:"",required:false}
+	,COMPANY_ROAD_TH:{data:"",regex:"",required:false}
+	,COMPANY_POSTAL_CODE:{data:"",regex:"",required:false},
+}

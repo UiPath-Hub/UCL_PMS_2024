@@ -56,6 +56,18 @@
     {
       "id": "Manage Product Inventory",
       "isDefault": false
+    },
+    {
+      "id": "Company Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Manage Company",
+      "isDefault": false
+    },
+    {
+      "id": "Manage Company Contact",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

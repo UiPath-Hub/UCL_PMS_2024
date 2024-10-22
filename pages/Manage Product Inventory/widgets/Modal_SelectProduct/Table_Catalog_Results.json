@@ -37,10 +37,13 @@
     "STATUS",
     "PRODUCT_TYPE",
     "PRODUCT_NAME",
-    "TOTAL_RECORDS"
+    "TOTAL_RECORDS",
+    "FLOOR_NO"
   ],
-  "columnUpdatedAt": 1728549999615,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1728633646990,
+  "columnWidthMap": {
+    "PRODUCT_NAME": 263
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
@@ -83,6 +86,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.FLOOR_NO.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -102,10 +108,10 @@
   "isLoading": false,
   "isSortable": true,
   "isVisible": true,
-  "isVisibleDownload": true,
+  "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": true,
-  "isVisibleSearch": true,
+  "isVisibleSearch": false,
   "key": "ob4ydro1fz",
   "label": "Data",
   "leftColumn": 0,
@@ -115,7 +121,7 @@
   "mobileRightColumn": 29,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onPageChange": "{{storeValue(Paginatation.SearchingResultsPageIndex, Table_Catalog_Results.pageNo).then(() => {\n  SP_SER_SEARCH_FOR_PR_CATALOG.run();\n});}}",
+  "onPageChange": "{{storeValue(Pagination.SearchingResultsPageIndex, Table_Catalog_Results.pageNo).then(() => {\n  SP_SER_SEARCH_FOR_PR_CATALOG.run();\n});}}",
   "parentColumnSpace": 10.03125,
   "parentId": "b9u48c8dus",
   "parentRowSpace": 10,
@@ -146,6 +152,40 @@
       "notation": "standard",
       "originalId": "AVAILABLE_UNIT",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "FLOOR_NO": {
+      "alias": "FLOOR_NO",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table_Catalog_Results.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"FLOOR_NO\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "FLOOR_NO",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Floor no.",
+      "notation": "standard",
+      "originalId": "FLOOR_NO",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

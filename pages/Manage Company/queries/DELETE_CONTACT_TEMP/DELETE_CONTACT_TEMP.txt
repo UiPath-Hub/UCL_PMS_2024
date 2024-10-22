@@ -1,0 +1,3 @@
+delete [PMS_COMPANY_CONTACT_TEMP] 
+					where [SECTION_ID] = 'fixSession'
+					and [USER_ID] = 'test'

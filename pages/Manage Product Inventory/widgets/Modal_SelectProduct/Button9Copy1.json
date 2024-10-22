@@ -26,7 +26,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{Table_Catalog_Results.selectedRow===undefined || Table_Catalog_Results.selectedRow.PRODUCT_ID==\"\"}}",
+  "isDisabled": "{{Table_Catalog_Results.selectedRow==undefined || Table_Catalog_Results.selectedRow.PRODUCT_ID.trim()==\"\" || Table_Catalog_Results.selectedRow.PRODUCT_ID == undefined}}",
   "isLoading": false,
   "isVisible": true,
   "key": "6fgfm4o8oh",

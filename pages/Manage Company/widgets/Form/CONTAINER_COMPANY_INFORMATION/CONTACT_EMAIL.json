@@ -1,0 +1,72 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "defaultText": "{{DefaultCompany.CONTACT_EMAIL.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "regex"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "EMAIL",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": "{{DefaultCompany.CONTACT_EMAIL.required}}",
+  "isVisible": true,
+  "key": "nwk391w658",
+  "label": "Email Contact",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "11",
+  "leftColumn": 34,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
+  "parentColumnSpace": 19.5,
+  "parentId": "e3df4phn2z",
+  "parentRowSpace": 10,
+  "regex": "{{DefaultCompany.CONTACT_EMAIL.regex}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "shouldAllowAutofill": true,
+  "showStepArrows": false,
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "dfeyk5dsu8",
+  "widgetName": "CONTACT_EMAIL"
+}

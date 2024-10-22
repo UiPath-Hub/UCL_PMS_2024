@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( DefaultContact.TITLE_NAME.data))(TITLE_NAME.options, TITLE_NAME.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": "{{DefaultContact.TITLE_NAME.required}}",
+  "isVisible": true,
+  "key": "72xnnx6qo8",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Title",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "10",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 35,
+  "mobileRightColumn": 55,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
+  "parentColumnSpace": 19.5,
+  "parentId": "rvgmx4xv13",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 19,
+  "serverSideFiltering": false,
+  "sourceData": "{{SP_SELECT_FOR_DROPDOWN_TN.data.map( (obj) =>{ return  {'label': obj.FIXED_VALUE, 'value': obj.SYSTEM_VALUE } })}}",
+  "topRow": 10,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "czuekvib3q",
+  "widgetName": "TITLE_NAME"
+}

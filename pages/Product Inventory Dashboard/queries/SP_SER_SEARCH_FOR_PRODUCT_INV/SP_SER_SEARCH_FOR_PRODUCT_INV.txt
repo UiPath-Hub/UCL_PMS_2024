@@ -6,5 +6,5 @@ EXECUTE [dbo].[SER_SEARCH_FOR_PRODUCT_INVENTORY]
   ,@pUnit ={{UNIT.text   !== ""?`${UNIT.text}`:null}}
   ,@pInventoryStatus ={{STATUS.selectedOptionValue   !== ""?`${STATUS.selectedOptionValue}`:null}}
   ,@pZone ={{ZONE.selectedOptionValue   !== ""?`${ZONE.selectedOptionValue}`:null}}
-  ,@pPageSize = 10
-	,@pPageIndex = {{appsmith.store["SearchingResultsPageIndex"]!==undefined?appsmith.store["SearchingResultsPageIndex"]:1}}
+  ,@pPageSize = {{Pagination.pageSize}}
+	,@pPageIndex = {{PMS_PRODUCT_INVENTORY_LM.pageNo!==undefined?PMS_PRODUCT_INVENTORY_LM.pageNo:1}}

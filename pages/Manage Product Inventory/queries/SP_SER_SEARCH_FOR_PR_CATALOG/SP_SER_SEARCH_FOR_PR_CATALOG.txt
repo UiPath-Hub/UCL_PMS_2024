@@ -5,5 +5,5 @@ EXEC [dbo].[SER_SEARCH_FOR_PRODUCT_CATALOG]
 		@pProductCatalogStatus = null,
 		@pAvailableUnit = null,
 		@pTotalUnit = null,
-		@pPageSize = 5,
-    @pPageIndex = 1
+		@pPageSize = {{Pagination.pageSize}},
+    @pPageIndex = {{Table_Catalog_Results.pageNo}}

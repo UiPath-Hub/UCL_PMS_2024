@@ -1,0 +1,75 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 65,
+  "boxShadow": "none",
+  "defaultText": "{{DefaultContact.COMPANY_CONTACT_POSTAL_CODE.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "validation"
+    },
+    {
+      "key": "regex"
+    },
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": "{{DefaultContact.COMPANY_CONTACT_POSTAL_CODE.required}}",
+  "isVisible": true,
+  "key": "6swxt70hj3",
+  "label": "Postal Code",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "10",
+  "leftColumn": 34,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "originalBottomRow": 65,
+  "originalTopRow": 60,
+  "parentColumnSpace": 11.4375,
+  "parentId": "rvgmx4xv13",
+  "parentRowSpace": 10,
+  "regex": "{{DefaultContact.COMPANY_CONTACT_POSTAL_CODE.regex}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "showStepArrows": false,
+  "topRow": 60,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{SELECT_POSTAL_CODE.data.some((ele)=>ele.POSTAL_CODE === COMPANY_CONTACT_POSTAL_CODE.text)}}",
+  "version": 2,
+  "widgetId": "qgn5tn2h0r",
+  "widgetName": "COMPANY_CONTACT_POSTAL_CODE"
+}

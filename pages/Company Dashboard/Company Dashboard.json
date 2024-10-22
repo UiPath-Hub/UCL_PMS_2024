@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "66de956ac05adf72589749ca_fb19c70c-fe0f-4055-adaf-0824cb841ee1",
+  "unpublishedPage": {
+    "isHidden": false,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 1100,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "minHeight": 780,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 76,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Company Dashboard",
+    "slug": "company-dashboard"
+  }
+}

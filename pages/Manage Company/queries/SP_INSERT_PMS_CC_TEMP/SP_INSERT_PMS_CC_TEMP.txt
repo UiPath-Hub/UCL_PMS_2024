@@ -1,0 +1,30 @@
+EXECUTE [dbo].[INSERT_PMS_COMPANY_CONTACT_TEMP] 
+	@pCOMPANY_CONTACT_ID = {{this.params.COMPANY_CONTACT_ID}} 
+  ,@pTitleName = {{this.params.TITLE_NAME}}
+,@pFirstNameEN = {{this.params.COMPANY_CONTACT_FIRST_NAME_EN}}
+,@pFirstNameTH = {{this.params.COMPANY_CONTACT_FIRST_NAME_TH}}
+,@pSURNameEN = {{this.params.COMPANY_CONTACT_SUR_NAME_EN}}
+,@pSURNameTH = {{this.params.COMPANY_CONTACT_SUR_NAME_TH}}
+,@pTelephone = {{this.params.COMPANY_CONTACT_TELEPHONE}}
+,@pEXT = {{this.params.COMPANY_CONTACT_EXT}}
+,@pMoblie = {{this.params.COMPANY_CONTACT_MOBILE}}
+,@pEmail = {{this.params.COMPANY_CONTACT_EMAIL}}
+,@pRole = {{this.params.COMPANY_CONTACT_ROLE}}
+,@pAddNo = {{this.params.COMPANY_CONTACT_ADD_NO}}
+,@pCOMPANY_CONTACT_FLOOR = {{this.params.COMPANY_CONTACT_FLOOR}}
+,@pMoo = {{this.params.COMPANY_CONTACT_MOO}}
+,@pSoiEN = {{this.params.COMPANY_CONTACT_SOI_EN}}
+,@pSoiTH = {{this.params.COMPANY_CONTACT_SOI_TH}}
+,@pRoadEN = {{this.params.COMPANY_CONTACT_ROAD_EN}}
+,@pRoadTH = {{this.params.COMPANY_CONTACT_ROAD_TH}}
+,@pSubdistrictEN = {{this.params.COMPANY_CONTACT_SUB_DISTRICT_EN}}
+,@pSubdistrictTH = {{this.params.COMPANY_CONTACT_SUB_DISTRICT_TH}}
+,@pDistrictEN = {{this.params.COMPANY_CONTACT_DISTRICT_EN}}
+,@pDistrictTH = {{this.params.COMPANY_CONTACT_DISTRICT_TH}}
+,@pProvinceEN = {{this.params.COMPANY_CONTACT_PROVINCE_EN}}
+,@pProvinceTH = {{this.params.COMPANY_CONTACT_PROVINCE_TH}}
+,@pPostalCode = {{this.params.COMPANY_CONTACT_POSTAL_CODE}}
+,@pStatus = {{this.params.STATUS}}
+
+  ,@pUSER_ID= {{'test'}}
+  ,@pSectionID= {{'fixSession'}}

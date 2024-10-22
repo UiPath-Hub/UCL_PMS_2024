@@ -10,4 +10,3 @@ EXECUTE [dbo].[UPDATE_PMS_PRODUCT_CATALOG_LM]
   ,@pStatus = {{STATUS.selectedOptionValue}}
   ,@pProductCatalogDetail = {{PRODUCT_DETAIL.text}}
   ,@UserID = 'Unknown'
-  ,@Active = {{SP_SELECTPRODUCTCATALOG.data.length == 0?0:SP_SELECTPRODUCTCATALOG.data[0].ACTIVE}}
