@@ -4,7 +4,7 @@
   "bottomRow": 322,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
-  "canOutsideClickClose": true,
+  "canOutsideClickClose": false,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -76,7 +76,7 @@
   "mobileRightColumn": 0,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClose": "{{Init.pageLoad();}}",
+  "onClose": "",
   "originalBottomRow": 169,
   "originalTopRow": 19,
   "parentColumnSpace": 1,

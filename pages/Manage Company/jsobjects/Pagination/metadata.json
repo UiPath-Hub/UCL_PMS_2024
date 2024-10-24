@@ -8,16 +8,8 @@
     "pluginType": "JS",
     "variables": [
       {
-        "name": "SearchingResultsPageIndex",
-        "value": "\"SearchingResultsPageIndex\""
-      },
-      {
         "name": "PageSize",
-        "value": "10"
-      },
-      {
-        "name": "PageIndex",
-        "value": "1"
+        "value": "5"
       }
     ]
   }

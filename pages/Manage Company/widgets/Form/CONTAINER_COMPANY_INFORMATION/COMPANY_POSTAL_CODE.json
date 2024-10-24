@@ -68,7 +68,7 @@
   "showStepArrows": false,
   "topRow": 63,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{SELECT_POSTAL_CODE.data.some((ele)=>ele.POSTAL_CODE === COMPANY_POSTAL_CODE.text)}}",
+  "validation": "{{ SELECT_POSTAL_CODE.data==undefined?true: SELECT_POSTAL_CODE.data.some((ele)=>ele.POSTAL_CODE === COMPANY_POSTAL_CODE.text)}}",
   "version": 2,
   "widgetId": "6unhqikid4",
   "widgetName": "COMPANY_POSTAL_CODE"

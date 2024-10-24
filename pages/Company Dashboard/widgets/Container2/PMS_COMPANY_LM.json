@@ -42,6 +42,8 @@
   ],
   "columnUpdatedAt": 1729493144822,
   "columnWidthMap": {
+    "COMPANY_ID": 273,
+    "CONTACT_NAME": 241,
     "CompanyName": 294,
     "Email": 229,
     "EndDate": 130,

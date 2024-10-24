@@ -39,21 +39,6 @@ export default {
 		}
 		
 	},
-	deleteButtonClick:()=>{
-		const finallyDone = ()=>{
-			removeValue("EditInventory");
-			navigateTo('Product Inventory Dashboard', {}, 'SAME_WINDOW');
-		}
-		/*SP_DELETE.run().then(()=>{
-			if(SP_DELETE.data !== undefined && SP_DELETE.data.length === 1){
-				if( SP_DELETE.data[0].RESULT_CODE === "ERROR"){
-					showAlert( SP_DELETE.data[0].RESULT_MESSAGES,"error");
-					Init.LoadDefaultProductCatalog();
-					Init.LoadDefaultProductInventory();
-				}else finallyDone();
-				}
-		})*/
-	},
 	set_POSTAL_CODE:()=>{
 	SELECT_POSTAL_CODE.run().then(()=>{
 			if(SELECT_POSTAL_CODE.data !== undefined && SELECT_POSTAL_CODE.data.length !== 0)
@@ -91,12 +76,38 @@ export default {
 											 COMPANY_SUB_DISTRICT : COMPANY_SUB_DISTRICT.selectedOptionValue,
 											 COMPANY_DISTRICT : COMPANY_DISTRICT.selectedOptionValue,
 											 COMPANY_PROVINCE : COMPANY_PROVINCE.selectedOptionValue,
-											 COMPANY_POSTAL_CODE : COMPANY_POSTAL_CODE.text 
+											 COMPANY_POSTAL_CODE : COMPANY_POSTAL_CODE.text,
+											 COMPANY_CODE_AUTOFLIGHT: COMPANY_CODE_AUTOFLIGHT.text
 											}
 		storeValue(PageConfigs.newCompanyTempFlag,companyTemp,true);
 	},
+	onPageIndexChange:()=>{
+		if(SP_SELECT_FOR_COMPANY_BY_ID.data != undefined){
+			SP_SELECT_FOR_COMPANY_BY_ID.data.map(async(row)=>{
+				if(row.COMPANY_ID != undefined){
+					await SP_SELECT_FOR_CONTACT_BY_COMID.run();
+					//load contact LM
+					if(SP_SELECT_FOR_CONTACT_BY_COMID.data != undefined)
+					{
+							PageConfigs.showCompanyContact = [];
+							await Promise.all( SP_SELECT_FOR_CONTACT_BY_COMID.data.map((ele)=>{
+							PageConfigs.showCompanyContact.push(ele);
+						}));
+					}
+				}
+			})
+			return SP_SELECT_FOR_COMPANY_BY_ID.data.length;
+		}
+			PageConfigs.showCompanyContact = [];
+			//load contact temp
+			SP_SELECT_ALL_C_CONTACT_TEMP.data.map((ele)=>{
+				PageConfigs.showCompanyContact.push(ele);
+			})
+		
+	}
+	,
 	onNewContactClick:()=>{
-		if(Form.hasChanges) return showAlert("Please save the company changes before managing contacts.","warning");
+		if(Form.hasChanges && appsmith.store[ PageConfigs.editCompanyFlag]!=undefined) return showAlert("Please save the company changes before managing contacts.","warning");
 		
 		removeValue(PageConfigs.editCompanyContactFlag).then(() => {
 			navigateTo('Manage Company Contact', {}, 'SAME_WINDOW');
@@ -105,13 +116,41 @@ export default {
 		});
 	},
 	onEditContactClick:()=>{
-		if(Form.hasChanges) return showAlert("Please save the company changes before managing contacts.","warning");
+		if(Form.hasChanges && appsmith.store[ PageConfigs.editCompanyFlag]!=undefined) return showAlert("Please save the company changes before managing contacts.","warning");
 		
-		storeValue(PageConfigs.editCompanyContactFlag, TABLE_CONTACT.tableData[TABLE_CONTACT.selectedRowIndex]).then(() => {
+		storeValue(PageConfigs.editCompanyContactFlag,
+							 {COMPANY_CONTACT_ID: TABLE_CONTACT.tableData[TABLE_CONTACT.selectedRowIndex]['Contact ID'],
+								TOTAL_RECORDS:TABLE_CONTACT.tableData[TABLE_CONTACT.selectedRowIndex]['TOTAL_RECORDS']
+							 }
+		).then(() => {
 			navigateTo('Manage Company Contact', {}, 'SAME_WINDOW');
 			storeValue(PageConfigs.fromCompany, {"COMPANY_NAME":`${COMPANY_NAME_TH.text}/${COMPANY_NAME_EN.text}`,"COMPANY_ID":COMPANY_ID.text});
 			JS.keepChange();
 		});
+	},
+	onDeleteBuutonClick:()=>{
+		showModal(MODAL_DELETE.name);
+	}
+	,deleteCompanyClick:()=>{
+		SP_DELETE_COMPANY.run().then(() => {
+					if(SP_DELETE_COMPANY.data != undefined && SP_DELETE_COMPANY.data.length === 1){
+							if(SP_DELETE_COMPANY.data[0]["RESULT_CODE"] === "DONE"){
+								showAlert( "Delete succeeded","succeed");
+								closeModal(MODAL_DELETE.name);
+								navigateTo('Company Dashboard', {}, 'SAME_WINDOW');
+							}else{
+								showAlert( "Delete failed."+SP_DELETE_COMPANY.data[0]["RESULT_MESSAGES"],"error");
+							}
+					}
+			});
+	}
+	,
+	totalRecords:()=>{
+		let LM= SP_SELECT_FOR_CONTACT_BY_COMID.data==undefined?undefined: SP_SELECT_FOR_CONTACT_BY_COMID.data[0];
+		let TEMP = SP_SELECT_ALL_C_CONTACT_TEMP.data==undefined?undefined: SP_SELECT_ALL_C_CONTACT_TEMP.data[0];
+		if(LM != undefined && LM["TOTAL_RECORDS"] != undefined) return LM["TOTAL_RECORDS"];
+		else if(TEMP != undefined && TEMP["TOTAL_RECORDS"] != undefined) return TEMP["TOTAL_RECORDS"];
+		else return 0;
 	}
 	,
 	test:()=>{

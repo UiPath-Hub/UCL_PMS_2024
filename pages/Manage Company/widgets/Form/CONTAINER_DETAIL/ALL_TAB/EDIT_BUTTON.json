@@ -21,7 +21,7 @@
     }
   ],
   "iconName": "edit",
-  "isDisabled": "{{TABLE_CONTACT.selectedRow === undefined || TABLE_CONTACT.selectedRow.COMPANY_CONTACT_ID == undefined || TABLE_CONTACT.selectedRow.COMPANY_CONTACT_ID.trim() == \"\"}}",
+  "isDisabled": "{{TABLE_CONTACT.selectedRow === undefined || TABLE_CONTACT.selectedRow['Contact ID'] == undefined || TABLE_CONTACT.selectedRow['Contact ID'].trim() == \"\"}}",
   "isLoading": false,
   "isVisible": true,
   "key": "sjcapm6fvo",

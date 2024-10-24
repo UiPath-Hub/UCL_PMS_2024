@@ -29,7 +29,7 @@
   "mobileRightColumn": 47,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{JS.onDeleteCompanyContactTemp();}}",
+  "onClick": "{{JS.onDeleteCompanyContact();}}",
   "originalBottomRow": 18,
   "originalTopRow": 14,
   "parentId": "hnhrc4bx09",

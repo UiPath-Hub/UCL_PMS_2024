@@ -23,9 +23,9 @@
       "pluginId": "mssql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "SELECT_PROVINCEs",
     "pageId": "Manage Company",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

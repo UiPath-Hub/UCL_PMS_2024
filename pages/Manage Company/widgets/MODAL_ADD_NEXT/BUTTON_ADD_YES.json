@@ -29,7 +29,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(MODAL_ADD_NEXT.name).then(() => {\n  navigateTo('Manage Company', {}, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{closeModal(MODAL_ADD_NEXT.name).then(() => {\n  navigateTo('Manage Company', {}, 'SAME_WINDOW');\n  Init.pageLoad();\n});}}",
   "originalBottomRow": 13,
   "originalTopRow": 9,
   "parentId": "nq12bxh8k2",

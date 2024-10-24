@@ -1,4 +1,4 @@
 export default {
 	editFlag:"editCompany",
-	newCompanyTempFlag:"newCompanyTempFlag"
+	newCompanyTempFlag:"newCompanyTempFlag",
 }

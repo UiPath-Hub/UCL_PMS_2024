@@ -68,19 +68,52 @@ export default {
 			
 		}
 	},
-	onDeleteCompanyContactTemp:()=>{
-		SP_DELETE_CONTACT_TEMP.run({COMPANY_CONTACT_ID:appsmith.store[ PageConfigs.editFlag].COMPANY_CONTACT_ID}).then(()=>{
-			if( SP_DELETE_CONTACT_TEMP.data !== undefined && SP_DELETE_CONTACT_TEMP.data.length > 0){
-					if(SP_DELETE_CONTACT_TEMP.data[0]["RESULT_CODE"] === 'DONE'){
-						showAlert("Delete succeeded.","success");
-						closeModal(MODAL_DELETE.name);
-						navigateTo('Manage Company', {}, 'SAME_WINDOW');
+	onDeleteCompanyContact:()=>{
+		if(SP_SELECT_FOR_CONTACT.data.length == undefined || SP_SELECT_FOR_CONTACT.data[0].COMPANY_ID == undefined){
+		//temp
+			SP_DELETE_CONTACT_TEMP.run({COMPANY_CONTACT_ID:appsmith.store[ PageConfigs.editFlag].COMPANY_CONTACT_ID}).then(async()=>{
+				if( SP_DELETE_CONTACT_TEMP.data !== undefined && SP_DELETE_CONTACT_TEMP.data.length > 0){
+						if(SP_DELETE_CONTACT_TEMP.data[0]["RESULT_CODE"] === 'DONE'){
+							await showAlert("Delete succeeded.","success");
+							await closeModal(MODAL_DELETE.name);
+							navigateTo('Manage Company', {}, 'SAME_WINDOW');
+						}
+						else{
+							showAlert("Delete failed."+SP_DELETE_CONTACT_TEMP.data[0]["RESULT_MESSAGES"],"error");
+						}
 					}
-					else{
-						showAlert("Delete failed.","error");
+			})
+		}else{
+			//LM
+			SP_DELETE_CONTACT_LM.run().then(async ()=>{
+				if( SP_DELETE_CONTACT_LM.data !== undefined && SP_DELETE_CONTACT_LM.data.length > 0){
+						if(SP_DELETE_CONTACT_LM.data[0]["RESULT_CODE"] === 'DONE'){
+							await showAlert("Delete succeeded.","success");
+							await closeModal(MODAL_DELETE.name);
+							navigateTo('Manage Company', {}, 'SAME_WINDOW');
+						}
+						else{
+							showAlert("Delete failed."+SP_DELETE_CONTACT_LM.data[0]["RESULT_MESSAGES"],"error");
+						}
 					}
-				}
-		})
+			})
+		}
+	},
+	onDeleteButtonClick:()=>{
+		let comID =  SP_SELECT_FOR_CONTACT.data[0]==undefined?undefined: SP_SELECT_FOR_CONTACT.data[0].COMPANY_ID;
+		if(comID != undefined && appsmith.store[PageConfigs.editFlag]["TOTAL_RECORDS"]=== 1){
+			showAlert("A company must have at least one contact.","warning");
+		}else{
+			showModal(MODAL_DELETE.name);
+		}
+	}
+	,
+	onButtonAddNoClick:()=>{
+		closeModal(MODAL_ADD_NEXT.name).then( async() => {
+			await removeValue(PageConfigs.editFlag);
+			await removeValue(PageConfigs.fromCompany);
+			navigateTo('Manage Company', {}, 'SAME_WINDOW');
+  	});
 	},
 	isArrayUndefinedOrEmpty:(array)=>{
 		if(array != undefined && array.length !== 0){

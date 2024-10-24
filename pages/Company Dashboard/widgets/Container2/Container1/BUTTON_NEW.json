@@ -10,11 +10,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -32,7 +28,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 39,
   "needsErrorInfo": false,
-  "onClick": "{{removeValue(PageConfigs.editFlag).then(() => {\n  navigateTo('Manage Company', {}, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{JS.onBUTTON_NEWClick();}}",
   "originalBottomRow": 59,
   "originalTopRow": 55,
   "parentColumnSpace": 19.5,

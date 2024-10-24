@@ -32,7 +32,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 89,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue(PageConfigs.editFlag, PMS_COMPANY_LM.selectedRow).then(() => {\n  navigateTo('Manage Company', {}, 'SAME_WINDOW');\n  removeValue(PageConfigs.newCompanyTempFlag);\n});}}",
+  "onClick": "{{JS.onBUTTON_EDITClick();}}",
   "originalBottomRow": 59,
   "originalTopRow": 55,
   "parentColumnSpace": 19.8125,

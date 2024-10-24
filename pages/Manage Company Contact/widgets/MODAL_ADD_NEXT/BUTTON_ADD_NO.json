@@ -15,11 +15,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -37,7 +33,7 @@
   "mobileRightColumn": 47,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(MODAL_ADD_NEXT.name).then(() => {navigateTo('Manage Company', {}, 'SAME_WINDOW');\n  removeValue(PageConfigs.editFlag);\n  removeValue(PageConfigs.fromCompany);});}}",
+  "onClick": "{{JS.onButtonAddNoClick();}}",
   "originalBottomRow": 13,
   "originalTopRow": 9,
   "parentId": "c947qfe73b",

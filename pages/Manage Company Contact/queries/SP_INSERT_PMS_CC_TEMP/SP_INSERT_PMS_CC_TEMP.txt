@@ -1,5 +1,5 @@
 EXECUTE [dbo].[INSERT_PMS_COMPANY_CONTACT_TEMP] 
-  ,@pTitleName = {{TITLE_NAME.selectedOptionValue}}
+  @pTitleName = {{TITLE_NAME.selectedOptionValue}}
   ,@pFirstNameEN = {{COMPANY_CONTACT_FIRST_NAME_EN.text}}
   ,@pFirstNameTH = {{COMPANY_CONTACT_FIRST_NAME_TH.text}}
   ,@pSURNameEN = {{COMPANY_CONTACT_SUR_NAME_EN.text}}

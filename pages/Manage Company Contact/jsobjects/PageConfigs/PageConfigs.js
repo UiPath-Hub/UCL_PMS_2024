@@ -1,4 +1,7 @@
 export default {
 	editFlag:"editCompanyContact",
-	fromCompany:"fromCompany"
+	fromCompany:"fromCompany",
+	showFlag:()=>{
+		return appsmith.store[this.fromCompany]
+	}
 }

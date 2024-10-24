@@ -15,6 +15,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
